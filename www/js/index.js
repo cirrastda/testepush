@@ -67,12 +67,15 @@ var onDeviceReady = function () {
     myApp       = new Framework7({ template7Pages: true, sortable: false, swipeBackPage: false });
     // mainView    = myApp.addView('.view-main', { dynamicNavbar: true, pushState: true });
 
+
     control = new mainClass();
     control.init().done(function(){
         alert('dony');
         control.push.setupPushNotification();
         alert('dony 2');
-    });        
+    });       
+    alert('dony 4'); 
+    
     // runCheckVersion();
 }
 
@@ -88,11 +91,13 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         onDeviceReady();
+        alert('dony 3');
         this.receivedEvent('deviceready');
     },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+        
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -101,6 +106,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        
     }
 };
 
