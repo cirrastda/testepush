@@ -281,7 +281,7 @@ var PushClass = function(){
 	                me.registerTopics();
 				}
 			});   
-			/*     
+			     
 			if (config.appDevice=='ios') {
 				me.pushObject.requestPushPermissionIOS(function(res) {
 					console.log(res);
@@ -290,7 +290,7 @@ var PushClass = function(){
 					console.log(err);
 				});
 			}
-			*/
+			
 			me.pushObject.getAPNSToken(function(token){
 			    // alert(token);
 			    console.log('getAPNSToken');
