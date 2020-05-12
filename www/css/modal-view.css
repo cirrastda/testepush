@@ -1,0 +1,61 @@
+/* MODAL VIEW */
+.modal-view {
+	height: 50vh;
+}
+
+.modal-view .pages {
+	background: transparent;
+}
+
+.modal-view .page {
+	background: transparent;
+	border: 0px
+}
+
+.modal-view .page-ol-left {
+	display: none;
+}
+
+.modal-view .smart-select-page .list-block {
+	margin-top: 0px;
+}
+
+.modal-view .smart-select-page .item-content {
+	min-height: 30px !important;
+	padding-left: 7px;
+}
+.modal-view .smart-select-page .item-inner {
+	min-height: 30px !important;
+}
+.modal-view .smart-select-page .item-title {
+	font-size: 13px;
+}
+
+.modal-view .smart-select-page .page-content {
+	padding-top: 35px;
+	background-color: #ffffff;
+}
+
+.modal-view .smart-select-page .searchbar {
+	height: 35px;
+}
+
+.modal-view .navbar {
+	height: 30px;
+}
+
+.modal-view .navbar-inner {
+	font-size: 13px;
+}
+
+.modal-view .navbar-inner .center{
+	font-size: 14px;
+}
+
+.modal-view .searchbar-input {
+	height: 24px;
+}
+
+.modal-view .searchbar-input input{
+	font-size: 13px;
+}

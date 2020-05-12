@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>874075977037-kgk0hhj8fnrgggiac36mmelclfbjl5d9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.874075977037-kgk0hhj8fnrgggiac36mmelclfbjl5d9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCbsZo6FQv8d5x8oJzrkLl2CIz9vEvSY4o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>874075977037</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.buonny.buonnydrivermessenger</string>
+	<key>PROJECT_ID</key>
+	<string>buonnydriver</string>
+	<key>STORAGE_BUCKET</key>
+	<string>buonnydriver.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:874075977037:ios:b7502119dfd405d6</string>
+	<key>DATABASE_URL</key>
+	<string>https://buonnydriver.firebaseio.com</string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<false></false>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Este aplicativo necessita conexão para recuperar a posição atual do motorista a fim de identificar o deslocamento na viagem</string>
+</dict>
+</plist>

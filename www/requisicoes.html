@@ -1,0 +1,27 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+		<div class="center" data-i18n="[html]menu.Agregar;">Agregar-se</div>
+		<div class="right"><a id="btnFiltro" href="#" class="link" ><i class="f7-icons color-white">search</i></a></div>		
+	</div>
+</div>
+
+<div data-page="requisicoes" class="page no-overflow">
+	<div id="total_empresas" class="list-block media-list no-margin divTotal">
+		<ul>
+			<li class="item-content totalizador">
+				<span class="qtd_empresas"></span>&nbsp;<span data-i18n="[html]text.EmpresasEncontradas;">empresa(s) encontradas.</span>
+			</li>
+		</ul>
+	</div>
+	<div class="page-content  infinite-scroll pull-to-refresh-content  black-screen" data-ptr-distance="55">
+		<!-- Default pull to refresh layer-->
+	    <div class="pull-to-refresh-layer">
+	      <div class="preloader"></div>
+	      <div class="pull-to-refresh-arrow"></div>
+	    </div>
+		<div id="lista_empresas" style="margin-bottom: 40px;">
+			
+		</div>
+	</div>
+</div>

@@ -1,0 +1,58 @@
+<div class="navbar">
+  <div class="navbar-inner navbar-viagem">
+    <div class="left menu-button">
+      <img src="img/icon/menu.png" width="32" />
+    </div>
+    <div class="center frete-button">
+      <img src="img/icon/DescerFretes.png" />
+    </div>
+  </div>
+</div>
+<div data-page="sem-viagem" class="page toolbar-fixed">
+    <div class="page-content">
+    	<!--<div class="erro">Não encontramos sua viagem. <br/><br/>Por favor, informe a placa do seu veículo a fim de pesquisarmos sua viagem.</div>-->
+    	<!-- <div class="mapaPosicao mapaCont full sem-botao" style="display: fixed; top: 0px; left: 0px; height:100%;width:100%;z-index:9998"></div> -->
+    	<div class="noPosition"><span class="blink" data-i18n="[html]error.NaoLocalizaPosicao;">Não estamos conseguindo localizar sua posição.</span></div>
+      <div class="bg-image image-center">
+        <!-- <img id="LogoAcompanhamento" src="img/lang/{{language}}/logotipo-acompanhamento-logistico.png"/> -->
+        <img id="LogoAcompanhamento" src="img/logo-min.png"/>
+      </div>
+    	<div class="bgBlock" style="display: none"></div>
+  		<div class="topoMapa">	    
+	      	<div class="img-back" style="display: none">
+	        	<img src="img/fechamento/seta-pagina-voltar.png" />
+	      	</div>
+		    <div class="infoMapa">
+	            <img src="img/icon/lupa-buscar-viagem-por-placa.png" />
+	            <input type="search" name="placa" class="placa" required data-i18n="[placeholder]text.BuscarViagensPlaca;"  maxlength="8" />
+		    </div>
+	      	<div class="img-search" style="display: none">
+            <button class="baseButton darkButton darkButtonBlue submitBtn btnPesquisar no-margin-top-important padding-8-important"><i class="f7-icons">search</i></button>
+	        	<!-- <img src="img/fechamento/botao-busca.png" class="btnPesquisar"/> -->
+	      	</div>
+
+		  </div>
+	    <!--
+	    <div class="content-block">
+	      <div class="row">
+	        <div class="col-100">
+	          <a href="#" class="button button-big active submitBtn btnPesquisar">
+	          	<i class="f7-icons color-white button-icon">search_strong</i>Pesquisar
+	          </a>
+	        </div>
+	      </div>
+	    </div>
+		-->
+	</div>
+  <div class="toolbar toolbar-rodape tabbar tabbar-labels tab_link_menu_opcoes" id="tab_link_menu_opcoes">
+      <div class="toolbar-inner toolbar-padding-0">
+        <a href="#" class="tab-link border-right-tab tabbar-full-label tabbar-active" id="btnProcurarViagens">
+            <span class="tabbar-label" data-i18n="[html]menu.ProximasViagens;">Próximas Viagens</span>
+        </a>
+        <a href="#" class="tab-link tabbar-full-label tabbar-inactive " id="btnFretes">
+            <span class="tabbar-label" data-i18n="[html]menu.Fretes;">Fretes</span>            
+        </a>
+      </div>
+  </div>      
+
+</div>

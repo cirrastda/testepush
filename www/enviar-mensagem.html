@@ -1,0 +1,49 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center">
+      <div class="nav-reduce uppercase" data-i18n="[html]menu.EventosViagem;">Eventos da Viagem</div>
+    </div>
+    <div class="subnavbar">
+      <div class="description-navbar uppercase" data-i18n="[html]text.MensagemGravada;">Sua mensaem será gravada no histórico da viagem</div>
+    </div>
+  </div>
+</div>
+
+<div data-page="enviar-mensagem" class="page">
+  <div class="page-content black-screen pull-to-refresh-content content-big-navbar-with-sub">
+    <div class="pull-to-refresh-layer" style="margin-top: -45px;">
+      <div class="preloader"></div>
+      <div class="pull-to-refresh-arrow"></div>
+    </div>
+    <div id="listMensagens" class="no-margin-top listMensagens">
+
+    </div>
+    <form name="fmMensagem">
+      <div class="enviar-mensagem rodape">
+        <input type="hidden" name="codigo" value="{{vloc_codigo}}" />
+        <div class="row">
+          <div class="col-80">
+            <textarea type="text" name="mensagem" class="textMensagem" data-i18n="[placeholder]text.Mensagem;" rows="1"></textarea>
+          </div>
+          <div class="col-2">
+              <button class="baseButton darkButton darkButtonBlue submitBtn btnEnviar"><i class="f7-icons">paperplane_fill</i></button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+<!--     <div class="botoesMensagem rodape">
+        <div class="col-50 divBtnApagar divBtnAcao">
+          <a href="#" class="button button-big button-fill button-raised color-dark-gray btnApagar uppercase text-white" data-i18n="[html]text.Apagar;">Apagar</a>
+        </div>
+        <div class="col-50 divBtnEnviar divBtnAcao">
+          <a href="#" class="button button-big button-fill button-raised color-dark-gray submitBtn btnEnviar uppercase text-white" data-i18n="[html]text.Enviar;">
+            Enviar
+          </a>
+        </div>
+
+    </div>
+ -->    
+  </div>
+</div>

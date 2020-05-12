@@ -1,0 +1,40 @@
+.page-seleciona-pais {
+	background-color: #012263;
+}
+.content-block.rodape-sel-pais {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content-block.rodape-sel-pais div{
+    background-color: transparent;
+}
+
+.content-block.rodape-sel-pais ul{
+    background-color: transparent;
+}
+
+.content-block.rodape-sel-pais ul:before{
+    height: 0px;
+}
+
+.content-block.rodape-sel-pais ul:after{
+    height: 0px;
+}
+
+.content-block.rodape-sel-pais .label-title {
+	color: #fff !important;
+}
+
+.content-block.rodape-sel-pais .item-inner {
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+
+.content-block.rodape-sel-pais .data-value {
+	color: #efefef !important;
+	width: 90% !important;
+	border: 0px !important;
+}

@@ -1,0 +1,107 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><img src="img/fechamento/seta-descricao-de-viagem.png"></a></div>
+    <div class="center" data-i18n="[html]menu.EditarPerfil;">Editar Perfil</div>
+  </div>
+</div>
+
+<div data-page="dados-pessoais" class="page">
+  <div class="bg-block" style="display: none">
+    <div class="bg-block-content">
+      <div class="float-navitem-left close-foto">
+        <img src="img/fechamento/seta-descricao-de-viagem.png" />
+      </div>
+      <div class="icones-foto-motorista">
+        <a href="#" class="img-nova-foto ico-foto-motorista" data-origem="camera">
+          <img src="img/fechamento/nova-foto.png"><br/>
+          <span data-i18n="[html]text.NovaFoto;">Nova Foto</span>
+        </a>
+        <br/><br/>
+        <a href="#" class="img-foto-existente ico-foto-motorista" data-origem="galeria">
+          <img src="img/fechamento/foto-existente.png"><br/>
+          <span data-i18n="[html]text.FotoExistente;">Foto Existente</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content bg-white">
+    <div class="content-block dados-pessoais">
+      <form>
+        <div class="list-block no-margin">
+          <ul>
+            <li class="item-content">
+              <div class="item-inner">
+              <div class="item-title label"><span  data-i18n="[html]text.CPF;">CPF</span>:</div>
+                <div class="item-input">
+                  <input type="hidden" name="cpf" value="{{documento}}" />
+                  <input type="hidden" name="telefone" value="{{telefone}}" />
+                  <input type="hidden" name="codigo_pais" value="{{codigo_pais}}" />
+                  {{documento}}
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Nome;">Nome</span>:</div>
+                <div class="item-input">
+                  <input type="text" name="nome" class="uppercase" required placeholder="Nome Completo" maxlength="200" value="{{nome}}" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span  data-i18n="[html]text.Email;">E-Mail</span>:</div>
+                <div class="item-input">
+                  <input type="text" name="email" class="email" placeholder="E-Mail" maxlength="200" value="{{email}}"/>
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-inner">
+                <div class="round-profile">
+                  <div style="background-image: url('{{foto}}?{{n}}');" data-img="{{foto}}" class="img-profile" ></div>
+                </div>
+                &nbsp;
+                <div class="btn-editar-imagem">
+                  <a href="#" class="button color-navy active btnEditImagem button-medium uppercase table-cell"  data-i18n="[html]text.ToqueParaEditar;">Toque para Editar</a>
+                </div>
+              </div>
+            </li>
+          <!--
+            <li class="item-content">
+              <div class="item-inner">
+              <div class="item-title label">Telefone:</div>
+                <div class="item-input">
+                  {{telefone}}
+                </div>
+              </div>
+            </li>
+          -->
+          </ul>
+        </div>
+      </form>
+      <div class="list-block">
+        <ul>
+           <li>
+            <div class="row">
+              <div class="col-100 table">
+                <a href="#" class="button color-gray active btnLogoff button-medium uppercase table-cell"  data-i18n="[html]text.SairDaConta;">
+                <!--<i class="icon-inline icon-logoff-white"></i>-->Sair da Conta</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-block rodape">
+      <div class="row">
+        <div class="col-50 table">
+          <a href="#" data-action="concluir" class="button button-fill button-medium button-raised color-navy btnCancelar uppercase table-cell"  data-i18n="[html]text.Cancelar;">Cancelar</a>
+        </div>
+        <div class="col-50 table">
+          <a href="#" data-action="concluir" class="button button-fill button-medium button-raised color-navy btnSalvar submitBtn uppercase table-cell"  data-i18n="[html]text.Salvar;">Salvar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

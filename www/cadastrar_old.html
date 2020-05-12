@@ -1,0 +1,264 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link btnVoltar"><img src="img/fechamento/seta-descricao-de-viagem.png" /></a></div>
+    <div class="center" data-i18n="[html]menu.VamosComecar;">Vamos Começar!</div>
+  </div>
+</div>
+<div data-page="cadastrar" class="page no-toolbar no-swipeback">
+  <div class="bg-block" style="display: none">
+    <div class="bg-block-content">
+      <div class="float-navitem-left close-foto">
+        <img src="img/fechamento/seta-descricao-de-viagem.png" />
+      </div>
+      <div class="icones-foto-motorista">
+        <a href="#" class="img-nova-foto ico-foto-motorista" data-origem="camera">
+          <img src="img/fechamento/nova-foto.png"><br/>
+          <span data-i18n="[html]text.NovaFoto;">Nova Foto</span>
+        </a>
+        <br/><br/>
+        <a href="#" class="img-foto-existente ico-foto-motorista" data-origem="galeria">
+          <img src="img/fechamento/foto-existente.png"><br/>
+          <span data-i18n="[html]text.FotoExistente;">Foto Existente</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content login-screen-content">
+    <div class="content-block cadastrar theme-blue-white margin-top-five">
+      <form>
+        <div class="list-block no-margin-bottom margin-top-five">
+          <ul>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+              <div class="item-title label" data-i18n="[html]text.CPF;">CPF</div>
+                <div class="item-input">
+                  <input type="text" name="cpf" required class="cpf" placeholder="___.___.___-__" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Nome;">Nome</div>
+                <div class="item-input">
+                  <input type="text" name="nome" required placeholder="Nome Completo" data-i18n="[placeholder]text.NomeCompleto;" maxlength="200" value="{{nome}}" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Email;">E-Mail</div>
+                <div class="item-input">
+                  <input type="text" name="email" class="email" placeholder="E-Mail" data-i18n="[placeholder]text.Email;" maxlength="200" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Celular;">Celular</div>
+                <div class="item-input">
+                  <input type="tel" name="celular" required class="celular telefone" placeholder="(__) _____-____" maxlength="15" value="{{telefone}}"/>
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.CEP;">CEP</div>
+                <div class="item-input">
+                  <input type="tel" name="cep" class="cep" placeholder="_____-___" maxlength="9" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Endereco;">Endereço</div>
+                <div class="item-input">
+                  <input type="text" name="endereco" placeholder="Endereço" data-i18n="[placeholder]text.Endereco;" maxlength="255" required />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Num;">Num.</div>
+                <div class="item-input">
+                  <input type="tel" name="numero" class="just-number" placeholder="Número" data-i18n="[placeholder]text.Numero;"maxlength="5" required />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Compl;">Compl.</div>
+                <div class="item-input">
+                  <input type="text" name="complemento" placeholder="Complemento" data-i18n="[placeholder]text.Complemento;" maxlength="128" />
+                </div>
+              </div>
+            </li>       
+            <li class="no-padding-left">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar estado" data-open-in="popup">
+                <select name="estado" data-old="{{estado}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  {{#each arrEstados}}
+                  <option value="{{@key}}">{{this}}</option>
+                  {{/each}}
+                </select>
+                <div class="item-content no-padding-left">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.Estado;">Estado</div>
+                    <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                  </div>
+                </div>
+              </a>
+            </li>       
+            <li class="no-padding-left">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar cidade" data-open-in="popup">
+                <select name="cidade" data-old="{{cidade}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                </select>
+                <div class="item-content no-padding-left">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.Cidade;">Cidade</div>
+                    <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                  </div>
+                </div>
+              </a>
+            </li>       
+            <li class="item-content no-padding-left">
+              <div class="item-inner">  
+                <div class="item-title label" data-i18n="[html]text.Bairro;">Bairro</div>
+                <div class="item-input">
+                  <input type="text" name="bairro" data-i18n="[placeholder]text.Bairro;" placeholder="Bairro" maxlength="128" required />
+                </div>
+              </div>
+            </li>       
+            <li class="item-content no-padding-left">
+              <div class="item-inner">  
+                <div class="item-title label" data-i18n="[html]text.Placa;">Placa</div>
+                <div class="item-input">
+                  <input type="text" name="placa" class="placa" required placeholder="___-____" maxlength="8" />
+                </div>
+              </div>
+            </li>       
+            <li class="no-padding-left item-content-select">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tipo veiculo"  data-open-in="popup">
+                <select name="tipo_veiculo" data-old="{{tipo_veiculo}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;"></option>
+                  {{#each arrTiposVeiculo}}
+                  <option value="{{key}}">{{value}}</option>
+                  {{/each}}
+                </select>
+                <div class="item-content no-padding-left">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.TipoVeiculo;">Tipo Veículo</div>
+                    <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                  </div>
+                </div>
+              </a>
+            </li>       
+            <li class="no-padding-left item-content-select">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tipo carroceria"  data-open-in="popup">
+                <select name="tipo_carroceria" data-old="{{tipo_carroceria}}">
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  {{#each arrTiposCarroceria}}
+                  <option value="{{key}}">{{value}}</option>
+                  {{/each}}
+                </select>
+                <div class="item-content no-padding-left">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.Carroceria;">Carroceria</div>
+                    <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="item-content no-padding-left {{#if estrangeiro}}no_show{{/if}}">
+              <div class="item-inner">  
+                <div class="item-title label">ANTT</div>
+                <div class="item-input">
+                  <input type="tel" name="antt" placeholder="ANTT" maxlength="10" />
+                </div>
+              </div>
+            </li>                   
+            <li class="no-padding-left item-content-select">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar marca" data-open-in="popup">
+                <select name="marca" data-old="{{marca}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  {{#each arrFabricantes}}
+                  <option value="{{@key}}">{{this}}</option>
+                  {{/each}}
+                </select>
+                <div class="item-content no-padding-left">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.Marca;">Marca</div>
+                    <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                  </div>
+                </div>
+              </a>
+            </li>       
+            <li class="no-padding-left item-content-select">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar modelo"  data-open-in="popup">
+                <select name="modelo" data-old="{{modelo}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                </select>
+                <div class="item-content no-padding-left">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.Modelo;">Modelo</div>
+                    <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                  </div>
+                </div>
+              </a>
+            </li>        
+            <li class="no-padding-left item-content-select">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar ano" data-open-in="popup">
+                <select name="ano" data-old="{{ano}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  {{#each arrAnos}}
+                  <option value="{{this}}">{{this}}</option>
+                  {{/each}}
+                </select>
+                <div class="item-content no-padding-left">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.Ano;">Ano</div>
+                    <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">  
+                <div class="item-title label" data-i18n="[html]text.CNH;">CNH</div>
+                <div class="item-input">
+                  <input type="tel" name="cnh" class="just-number cnh" data-i18n="[placeholder]text.NumeroCNH;" placeholder="Número da CNH" maxlength="11" required />
+                </div>
+              </div>
+            </li>       
+            <li class="item-content no-padding-left">
+              <div class="item-inner">  
+                <div class="item-title label" data-i18n="[html]text.DtValidade;">Dt. Validade</div>
+                <div class="item-input">
+                  <input type="text" class="data" id="cnh_vencimento" name="cnh_vencimento" data-i18n="[placeholder]text.ValidadeCNH;" placeholder="Validade da CNH"  required />
+                </div>
+              </div>
+            </li>       
+            <li class="item-content no-padding-left">
+              <div class="item-inner no-padding-right">
+                <div class="round-profile">
+                  <div class="img-profile img-profile-cad" style="background-image: url('img/profile/ico-profile.png');" data-img=""></div>
+                </div>
+                &nbsp;
+                <div class="btn-editar-imagem">
+                  <a href="#" class="button color-navy active btnEditImagem button-medium uppercase table-cell" data-i18n="[html]text.ToqueParaEditar;">Toque para Editar</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="content-block">
+      <div class="row">
+        <div class="col-100">
+          <a href="#" data-action="concluir" class="button button-big button-fill button-raised color-navy btnCadastrar submitBtn" data-i18n="[html]text.FinalizarCadastro;">Finalizar Cadastro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

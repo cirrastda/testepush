@@ -1,0 +1,75 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center uppercase" data-i18n="[html]menu.DadosRecebedor;">Dados do Recebedor</div>
+  </div>
+</div>
+
+<div data-page="confirmar-entrega" class="page">
+  <div class="page-content black-screen">
+    <div class="list-block confirmar-entrega">
+      <form name="fmEntrega">
+        <input type="hidden" name="codigo" value="{{vloc_codigo}}" />
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><img src="img/fechamento/nome-completo-icone.png" /></div>
+                <div class="item-input">
+                  <input type="text" name="nome" data-i18n="[placeholder]text.NomeCompleto;" value="{{vloc_nome_receptor}}" {{#if confirmtime}}disabled="disabled"{{/if}} required="required">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><img src="img/fechamento/cpf.png" /></div>
+                <div class="item-input">
+                  <input type="tel" name="cpf" data-i18n="[placeholder]text.CPF;" class="cpf" value="{{vloc_cpf_receptor}}" {{#if confirmtime}}disabled="disabled"{{/if}} >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><img src="img/fechamento/rg.png" /></div>
+                <div class="item-input">
+                  <input type="text" name="rg" class="rg" data-i18n="[placeholder]text.RG;" value="{{vloc_rg_receptor}}" {{#if confirmtime}}disabled="disabled"{{/if}} >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner anexar-fotos">
+                <div class="item-title label"><img src="img/fechamento/anexar-fotos.png" /></div>
+                <div class="item-input" data-i18n="[html]text.AnexarFotos;">
+                  Anexar Fotos
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner gravar-assinatura">
+                <div class="item-title label"><img src="img/fechamento/gravar-assinatura.png" /></div>
+                <div class="item-input" data-i18n="[html]text.GravarAssinatura;">
+                  Gravar Assinatura
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="row margin-15 rodape">
+          <div class="col-100">
+            <a href="#" class="button button-big button-fill button-raised color-gray btnSalvar submitBtn uppercase text-black" data-i18n="[html]text.ConfirmarEntrega;">Confirmar Entrega</a>
+          </div>
+        </div>
+      </form>
+    </div>                
+
+  </div>
+</div>

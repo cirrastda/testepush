@@ -1,0 +1,269 @@
+<html>
+<head>
+<style>
+.nopadding { padding: 0 !important; }
+
+button,
+button.fretebtn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    background: #393939;
+    color: #18a9b6;
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid #18a9b6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+button:active { background: #e2e2e2; }
+.freteBtn {
+    padding: 30px 0 20px 0;
+    border: 2px solid #c3c3c3;
+    font-weight: bold;
+    color: #10d4e5;
+}
+.redbtn {
+    background: #393939;
+    border-bottom: 3px solid #ff4444;
+    color: #ff4444;
+}
+.whitebtn {
+    background: #fff;
+    border-bottom: 3px solid #113a70;
+    color: #113a70;
+}
+.sentbtn { width: 100%; }
+.sentbtn .fa { float: none; }
+button .fa { float: left; }
+button.fretebtn { 
+    width: 100%;
+    border-radius: 0; 
+    border: 1px solid #18a9b6;
+}
+textarea {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    color: #18a9b6;
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid #18a9b6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Histórico de Viagem */
+.alert-dark { 
+    background: #303030; 
+    color: white; 
+    border-left: 8px solid #575757;
+}
+.alert-dark.entregue { border-left: 8px solid #13ae00; }
+
+/* Seus Fretes / Ofertas de Cargas / Histórico */
+.boxFrete {
+    padding: 10px 0 0 0; 
+    background: #303030;
+    border-left: 3px solid #10d4e5;
+    list-style: none;
+}
+.boxFrete li { 
+    padding: 2px 10px 0; 
+    padding-bottom: 0; 
+    width: 100%;
+    color: white;
+}
+.boxFrete li a {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background: #10d4e5;
+    color: #424a4b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.topAlertBar {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background: #10d4e5;
+    color: #393939;
+    font-weight: bold;
+    text-align: center;
+}
+.topAlertBar span {
+    display: block;
+    font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h3>Backgound dos formulários: solido #dfdfdf</h3>
+    <hr />
+    <h3>Backgound das listas de frete: solido #1c1c1c</h3>
+    <hr />
+    <h3>Box das listas de frete: background: #444444, border-left: 3px solid #10d4e5;</h3>
+    <h3>Botão "Ver Detalhes" - background: #10d4e5; </h3>
+    <hr />
+    
+    <button class="whitebtn">Botão para Login e Formulários</button>
+    <h3>Botões</h3>
+    <p>início de frete</p>
+    <button>Iniciar Frete</button>
+    <button class="redbtn"><i class="fa fa-flag-checkered"></i>  Finalizar Viagem</button>
+    <button><i class="fa fa-redo"></i>Entrega Realizada</button>
+    <button class="redbtn">Entrega Não Realizada</button>
+    
+    <hr />
+    <h3>Menu Frete</h3>
+    <div class="row">
+        <div class="col-4">
+            <button type="button" class="btn btn-light freteBtn">
+                <!-- icone aqui -->
+                Oferda de Cargas
+            </button>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-light freteBtn">
+                <!-- icone aqui -->
+                Seus Fretes
+            </button>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-light freteBtn">
+                <!-- icone aqui -->
+                Histórico
+            </button>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-light freteBtn">
+                <!-- icone aqui -->
+                Meus Dados
+            </button>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-light freteBtn">
+                <!-- icone aqui -->
+                Agregar-se
+            </button>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-light freteBtn">
+                <!-- icone aqui -->
+                Empresas
+            </button>
+        </div>
+    </div>
+    <h3>Busca de Frete</h3>
+    <button><i%20class="fa fa-sync"></i>Atualizar Posição</button>
+    
+    <h4>Botõtes das paginas de frete</h4>
+    <div class="row">
+        <div class="col nopadding">
+            <button class="fretebtn">
+                <!-- icone aqui -->
+                Rejeitar
+            </button>
+        </div>
+        <div class="col nopadding">
+            <button class="fretebtn">
+                <!-- icone aqui -->
+                Contra-oferta
+            </button>
+        </div>
+        <div class="col nopadding">
+            <button class="fretebtn">
+                <!-- icone aqui -->
+                Aceitar
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col nopadding">
+            <button class="fretebtn">
+                <!-- icone aqui -->
+                Cancelar
+            </button>
+        </div>
+        <div class="col nopadding">
+            <button class="fretebtn">
+                <!-- icone aqui -->
+                Finalizar
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col nopadding">
+            <button class="fretebtn">
+                <!-- icone aqui -->
+                Contactar por Telefone
+            </button>
+        </div>
+        <div class="col nopadding">
+            <button class="fretebtn">
+                <!-- icone aqui -->
+                Contactar por E-Mail
+            </button>
+        </div>
+    </div>
+    
+    <hr />
+    <h3>Mensagem</h3>
+    <ul>
+        <li>Background: #1c1c1c</li>
+        <li>
+            <strong>Caixa de texto</strong>
+            border-left: 1px solid #16b1bf; <br />
+            border-bottom: 1px solid #16b1bf;
+        </li>
+    </ul>
+    <p>Botão e textarea mensagens</p>
+    <div class="row">
+        <div class="col-10">
+            <textarea placeholder="Digite uma mensagem..."></textarea>
+        </div>
+        <div class="col-2">
+            <button class="sentbtn"><i class="fa fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <hr />
+    <h3>Histórico da viagem</h3>
+    <div class="alert alert-dark entregue" role="alert">
+      Alvo 01 Entregue
+    </div>
+    <div class="alert alert-dark" role="alert">
+      Envio de mensagem
+    </div>
+    
+    <hr />
+    <h3>Seus Fretes / Ofertas de Cargas / Histórico</h3>
+    <ul class="boxFrete">
+        <li><strong>Radar Transportes e Logística Eireli</strong></li>
+        <li><strong>De:</strong> São Paulo - SP</li>
+        <li><strong>Para:</strong> Campinas - SP</li>
+        <li><strong>Valor:</strong> R$51.000,00</li>
+        <li><strong>Retirada:</strong> 11/01/2020</li>
+        <li><strong>Entregue:</strong> 20/01/20</li>
+        <li><strong>KM Total:</strong> 100km</li>
+        <li class="nopadding">
+            <a href="#"> + Ver Detalhes</a>
+        </li>
+    </ul>
+    
+    <hr />
+    <h3>Posição Atual</h3>
+    
+    <div class="alert topAlertBar" role="alert">
+        <span>Você está em:</span>
+        Al. dos Guatás, 102
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<div data-page="login-screen" class="page fullpage no-navbar">
+  <div class="page-content login-screen-content">
+    <div class="background-login">
+      <div class="float-navitem-left back">
+        <img src="img/fechamento/seta-pagina-voltar.png" />
+      </div>
+      <div class="content-block">
+        <div class="bg-image image-acompanhamento">
+          <!-- <img id="LogoAcompanhamento" src="img/lang/{{language}}/logotipo-acompanhamento-logistico.png"/> -->
+          <img id="LogoAcompanhamento" src="img/logo-min.png"/>
+        </div>
+      </div>   
+      <div class="content-block rodape">
+        <form >
+          <div class="data-form flex">
+            <div class="list-block absbottom">
+              <ul>    
+                <li class="item-content data-line">
+                  <div class="item-inner">   
+                  <div class="item-title label label-title" data-i18n="[html]text.CPF;"></div>
+                    <div class="item-input data-value">
+                      <input type="text" name="cpf" required class="cpf" placeholder="___.___.___-__" />
+                    </div>
+                  </div>
+                </li>         
+                  <li>
+                  <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar país" data-open-in="popup">
+                    <div class="item-content data-line">
+                      <select name="pais" data-old="{{pais}}" required disabled="disabled">
+                        <option value="">Escolha</option>
+                        {{#each arrPaises}}
+                        <option value="{{@key}}">{{this}}</option>
+                        {{/each}}
+                      </select>
+                      <div class="item-inner">
+                        <div class="item-title label-title" data-i18n="[html]text.Pais;"></div>
+
+                        <div class="item-after left data-value data-select"></div>
+                      </div>
+                    </div>
+                  </a>
+                </li> 
+                <li class="item-content data-line">
+                  <div class="item-inner">
+                  <div class="item-title label label-title" data-i18n="[html]text.Telefone;"></div>                
+                    <div class="item-input data-value">
+                      <input type="tel" name="telefone" required class="telefone" placeholder="(__) _____-____" maxlength="15" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="button button-big actionButtonWhite actionButtonText submitBtn uppercase">
+                  <i class="icon-inline icon-login-blue"></i><span data-i18n="[html]text.Acessar;">Acessar</span></a>
+                </li>
+              </ul>
+            </div> 
+            <div class="list-block">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center">Comandos</div>
+  </div>
+</div>
+<div data-page="comandos" class="page">
+  <form data-search-list=".list-block-search" data-search-in=".item-dt-cad, .item-dt-env, .item-cod, .item-msg, .item-lat, .item-lng" class="searchbar searchbar-init">
+    <div class="searchbar-input">
+      <input type="search" placeholder="Buscar"><a href="#" class="searchbar-clear"></a>
+    </div><a href="#" class="searchbar-cancel">Cancelar</a>
+  </form>
+ 
+  <!-- Search Bar overlay -->
+  <div class="searchbar-overlay"></div>
+
+  <div class="page-content pull-to-refresh-content comandos">
+    <div class="pull-to-refresh-layer">
+      <div class="preloader"></div>
+      <div class="pull-to-refresh-arrow"></div>
+    </div>
+    
+    <div class="content-block searchbar-not-found no-margin">
+      <div class="content-block-inner">Nenhum comando encontrado</div>
+    </div>
+
+    <div class="list-block list-block-search searchbar-found no-margin">
+      <ul>
+      {{#each comandos}}
+        <li>
+          <div class="headerEntrega item-inner">
+            <table class="dados comandos">
+              <tr>
+                <td class="lbl">GERADO</td>
+                <td class="lbl">ENVIADO</td>
+              </tr>
+              <tr>
+                <td class="info item-dt-cad">{{data_cadastrada}}</td>
+                <td class="info item-dt-env">{{sent}}</td>
+              </tr>
+              <tr>
+                <td class="lbl">CODIGO</td>
+                <td class="lbl">COMANDO</td>
+              </tr>
+              <tr>
+                <td class="info item-cod">{{codigo}}</td>
+                <td class="info item-msg">{{mensagem}}</td>
+              </tr>
+              <tr>
+                <td class="lbl">LATITUDE</td>
+                <td class="lbl">LONGITUDE</td>
+              </tr>
+              <tr>
+                <td class="info item-lat">{{latitude}}</td>
+                <td class="info item-lng">{{longitude}}</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+      {{/each}}  
+      </ul>   
+    </div>
+  </div>
+</div>

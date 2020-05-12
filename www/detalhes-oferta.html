@@ -1,0 +1,275 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center" data-i18n="[html]menu.DetalhesOferta;">Detalhes da Oferta</div>
+  </div>
+</div>
+
+<div data-page="detalhes-oferta" class="page">
+  <div class="page-content content-big-navbar" style="height: {{height}}">
+    <form>
+      <input type="hidden" name="codigo_frete" value="{{codigo_frete}}" />
+      <input type="hidden" name="codigo_oferta" value="{{codigo_oferta}}" />
+
+      <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.InformacoesFrete;">INFORMACOES DO FRETE</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.NumFrete;">Num. Frete</span>:</div>
+                <div class="item-input-content">
+                  {{num_transporte}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.DtCadastro;">Dt. Cadastro</span>:</div>
+                <div class="item-input-content">
+                  {{data_cadastro}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.DtRetirada;">Dt. Retirada</span>:</div>
+                <div class="item-input-content">
+                  {{data_previsao_inicio}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.DtEntrega;">Dt. Entrega</span>:</div>
+                <div class="item-input-content">
+                  {{data_previsao_entrega}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Valor;">Valor</span>:</div>
+                <div class="item-input-content">
+                  {{valor}}
+                </div>
+              </div>
+            </div>
+          </li>   
+          {{#if exibe_contra_oferta}}
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.ContraOferta;">Contra-Oferta</span>:</div>
+                <div class="item-input-content">
+                  {{valor_contra_oferta}}
+                </div>
+              </div>
+            </div>
+          </li>             
+          {{/if}}
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Peso;">Peso</span>:</div>
+                <div class="item-input-content">
+                  {{peso}}
+                </div>
+              </div>
+            </div>
+          </li>                  
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Modalidade;">Modalidade</span>:</div>
+                <div class="item-input-content">
+                  {{modalidade}}
+                </div>
+              </div>
+            </div>
+          </li>                  
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.TiposVeiculos;">Tipo(s) Veículo(s)</span>:</div>
+                <div class="item-input-content">
+                  {{tipos_veiculos}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.TiposCarroceria;">Tipo(s) Carroc.</span>:</div>
+                <div class="item-input-content">
+                  {{tipos_carrocerias}}
+                </div>
+              </div>
+            </div>
+          </li>          
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Tecnologias;">Tecnologias</span>:</div>
+                <div class="item-input-content">
+                  {{tecnologias}}
+                </div>
+              </div>
+            </div>
+          </li>          
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.KMTotal;">KM Total</span>:</div>
+                <div class="item-input-content">
+                  {{km_total}}
+                </div>
+              </div>
+            </div>
+          </li>          
+        </ul>
+      </div>
+      <div class="content-block-title title-mini2 title-dark"><span data-i18n="[html]text.Origem;">ORIGEM</span></div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Local;">Local</span>:</div>
+                <div class="item-input-content">
+                  {{origem}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Endereco;">Endereço</span>:</div>
+                <div class="item-input-content" style="font-size: 14px">
+                  {{endereco_origem}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Cidade;">Cidade</span>/<span data-i18n="[html]text.UF;">UF</span>:</div>
+                <div class="item-input-content">
+                  {{cidade_origem}}/{{uf_origem}}
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title title-mini2 title-dark"><span data-i18n="[html]text.Destino;">DESTINO</span></div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Local;">Local</span>:</div>
+                <div class="item-input-content">
+                  {{destino}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Endereco;">Endereço</span>:</div>
+                <div class="item-input-content" style="font-size: 14px">
+                  {{endereco_destino}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Cidade;">Cidade</span>/<span data-i18n="[html]text.UF;">UF</span>:</div>
+                <div class="item-input-content">
+                  {{cidade_destino}}/{{uf_destino}}
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+<!--       <div class="content-block no-margin">
+        <div class="row">
+          <div class="col-100">
+            <a href="#" class="button button-big button-fill button-raised color-green btnSalvar submitBtn">Salvar</a>
+          </div>
+        </div>
+      </div> -->
+    </form>
+  </div>
+  <div class="toolbar toolbar-with-buttons tabbar tabbar-labels tab_links_aceitar">
+      <div class="toolbar-inner border-top-tab">
+          <a href="#" class="tab-link border-right-tab" id="btnRejeitar">
+              <img src="img/icon/RejeitarFrete.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.Rejeitar;">Rejeitar</span>
+          </a>
+          <a data-rel="external" href="#" class="tab-link border-right-tab btnLigar" id="btnLigar">
+              <img src="img/icon/telefone.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.Ligar;">Ligar</span>
+          </a>
+          <a data-rel="external" href="#" class="tab-link border-right-tab btnEmail" id="btnEmail">
+              <img src="img/icon/mail.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.Email;">E-Mail</span>
+          </a>
+          <a href="#" class="tab-link border-right-tab" id="btnContraOferta">
+              <img src="img/icon/ContraOferta.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.ContraOferta;">Contra-Oferta</span>
+          </a>
+          <a href="#" class="tab-link" id="btnAceitar">
+              <img src="img/icon/AceitarOferta.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.AceitarFrete;">Aceitar Frete</span>
+          </a>
+      </div>
+  </div>
+   <div class="toolbar toolbar-with-buttons tabbar tabbar-labels tab_link_candidatar">
+      <div class="toolbar-inner border-top-tab">
+          <a data-rel="external" href="#" class="tab-link border-right-tab btnLigar" id="btnLigarCand">
+              <img src="img/icon/RejeitarFrete.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.Ligar;">Ligar</span>
+          </a>
+          <a data-rel="external" href="#" class="tab-link border-right-tab btnEmail" id="btnEmailCand">
+              <img src="img/icon/mail.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.Email;">E-Mail</span>
+          </a>
+          <a href="#" class="tab-link border-right-tab" id="btnContraOfertaCand">
+              <img src="img/icon/ContraOferta.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.ContraOferta;">Contra-Oferta</span>
+          </a>
+          <a href="#" class="tab-link" id="btnCandidatar">
+              <img src="img/icon/AceitarOferta.png" />
+              <span class="tabbar-label color-white" data-i18n="[html]text.CandidatarFrete;">Aceitar Frete</span>            
+<!--               <i class="f7-icons color-white">person</i>
+              <span class="tabbar-label color-white">Candidatar-se ao Frete</span> -->
+          </a>
+      </div>
+  </div>
+    <div class="toolbar toolbar-with-buttons tabbar tabbar-labels tab_link_avaliar">
+        <div class="toolbar-inner border-top-tab">
+            <a href="#" class="tab-link" id="btnAvaliar">
+                <img src="img/icon/avaliar.png" />
+                <span class="tabbar-label color-white" data-i18n="[html]text.Avaliar;">Avaliar</span>
+            </a>
+        </div>
+    </div>  
+</div>

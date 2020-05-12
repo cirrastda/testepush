@@ -1,0 +1,126 @@
+
+.actionButton {
+    background-color: #393939;
+    border-color: #336699;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.actionButtonLight {
+    background-color: #d9efff;
+    border-color: #336699;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.actionButtonBlue {
+    background-color: #113a70;
+}
+
+.actionButtonLightBlue {
+    background-color: #1B3C81;
+}
+
+.actionButtonWhite {
+    background-color: #ffffff;
+    border-color: #336699;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.actionButtonGray {
+    background-color: #c0c0c0;
+    border-color: #888888 !important;
+    border-width: 1px;
+    border-bottom-width: 4px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff !important;
+}
+
+.actionButtonDisabled {
+    background-color: #cccccc !important;
+    border-color: #666666 !important;
+    color: #666666 !important;
+}
+
+.actionButtonDisabled i {
+    display: none !important;
+}
+.actionButtonBlueText {
+    color: #ffffff;
+}
+
+
+.actionButtonText {
+    color: #336699;
+    font-weight: bold;
+}
+
+.actionButtonText i {
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+
+.actionButtonText i.f7-icons {
+    top: 0px !important;
+}
+
+.baseButton {
+    margin-top: 10px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;    
+}
+
+.fullButton {
+    margin-top: 10px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;    
+    width: 90%;    
+}
+
+.button100 {
+    width: calc(100% - 20px) !important;
+}
+
+.button100NoMargin {
+    width: 100% !important;
+}
+
+.darkButton {
+    background: #393939;    
+    border-bottom: 3px solid #18a9b6;
+}
+
+.darkButton:active { 
+    background: #e2e2e2; 
+}
+
+.darkButtonBlue {
+    color: #18a9b6;
+    border-bottom: 3px solid #18a9b6;
+}
+
+.darkButtonRed {
+    border-bottom: 3px solid #ff4444;
+    color: #ff4444;
+}

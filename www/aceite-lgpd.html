@@ -1,0 +1,60 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    {{#unless logado}}
+      <div class="left"><a href="#" class="back link btnVoltar"><i class="icon icon-back"></i></a></div>
+    {{/unless}}
+    <div class="center" data-i18n="[html]menu.AntesContinuar;">Mas antes de continuar</div>
+  </div>
+</div>
+<div data-page="aceite-lgpd" class="page no-toolbar no-swipeback">
+  <div class="background-login">
+    <div class="page-content login-screen-content">
+      <div class="content-block content-with-logo">
+        <div class="logo text-center no-margin-top"><img src="img/logo-min.png" width="75%"></div>
+        <form>                
+            <div class="lgpd-login">
+              <div id="" class="lgpd-login-texto">
+                <input type="hidden" name="codigo" value="{{codigo}}"/>
+                <input type="hidden" name="documento" value="{{documento}}"/>
+                <div class="list-block no-margin-bottom margin-top-five">
+                  <div class="texto-lgpd">	
+                      {{texto_lgpd}}                
+                  </div>
+                  <div class="link-permissoes">
+                    <a href="#" class="btnLinkPermissoes" data-i18n="[html]text.EditarPrivacidade;">Editar Configurações de Privacidade</a>
+                  </div>
+                  <ul>
+                    <li class="item-content no-padding-left">
+                      <div class="item-inner">  
+                        <div class="item-input">
+                            <label class="label-switch">
+                            <!--<input type="checkbox" class="texto-lgpd-select" name="lgpd">-->
+                            <input type="checkbox" class="input-lgpd-login" name="lgpd" value="0">
+                            <div class="checkbox"></div>
+                            </label>
+                        </div>
+                        <!-- <div class="item-title label">Li e concordo com os termos acima dispostos.</div>-->
+                        <div class="aceito-lgpd" data-i18n="[html]text.LiAceitoTermos;">Li e aceito todos os termos acima dispostos.</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>            
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="content-block">
+        <div class="row">
+          <div class="col-100">
+            <!--<a href="#" class="button button-big button-fill button-raised color-green btnAceitar submitBtn" disabled="disabled">Continuar</a>-->
+            <a href="#" class="button button-big btnAceitar actionButtonWhite actionButtonText actionButtonDisabled submitBtn" disabled="disabled"><i class="icon-inline icon-ok-blue"></i> <span data-i18n="[html]text.Continuar;">Continuarx</span></a>
+            {{if logado}}
+              <br />
+              <a href="#" class="button button-big btnRejeitar actionButtonWhite actionButtonText submitBtn"><i class="icon-inline icon-axis-blue"></i> <span data-i18n="[html]text.RejeitarSair;">RejeitarSair</span></a>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

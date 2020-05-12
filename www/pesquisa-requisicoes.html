@@ -1,0 +1,59 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center" data-i18n="[html]text.Filtrar;">Filtrar</div>
+  </div>
+</div>
+<div data-page="pesquisa-requisicoes" class="page">
+  <div class="page-content content-big-navbar">
+    <form>
+      <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.Localidade;">Localidade</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar estado" data-open-in="popup">
+              <select name="estado" data-old="{{estado}}" required>
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrEstados}}
+                <option value="{{@key}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.UF;">UF</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>       
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar cidade" data-open-in="popup">
+              <select name="cidade" data-old="{{cidade}}" required>
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.Cidade;">Cidade</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>       
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <div class="row">
+          <div class="col-100">
+            <!-- <a href="#" id="btnPesquisar" class="button button-big button-fill button-raised color-green ">Pesquisar</a> -->
+            <button class="fullButton darkButton darkButtonBlue button100NoMargin" id="btnPesquisar"><span data-i18n="[html]text.Pesquisar;">Pesquisar Empresa</span></button>                
+
+            <!-- <a href="#" id="btnPesquisar" class="button">Pesquisar</a> -->
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+ 
+</div>

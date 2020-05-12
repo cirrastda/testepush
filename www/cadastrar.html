@@ -1,0 +1,93 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link btnVoltar"><img src="img/fechamento/seta-descricao-de-viagem.png" /></a></div>
+    <div class="center" data-i18n="[html]menu.VamosComecar;">Vamos Começar!</div>
+  </div>
+</div>
+<div data-page="cadastrar" class="page no-toolbar no-swipeback">
+  <div class="bg-block" style="display: none">
+    <div class="bg-block-content">
+      <div class="float-navitem-left close-foto">
+        <img src="img/fechamento/seta-descricao-de-viagem.png" />
+      </div>
+      <div class="icones-foto-motorista">
+        <a href="#" class="img-nova-foto ico-foto-motorista" data-origem="camera">
+          <img src="img/fechamento/nova-foto.png"><br/>
+          <span data-i18n="[html]text.NovaFoto;">Nova Foto</span>
+        </a>
+        <br/><br/>
+        <a href="#" class="img-foto-existente ico-foto-motorista" data-origem="galeria">
+          <img src="img/fechamento/foto-existente.png"><br/>
+          <span data-i18n="[html]text.FotoExistente;">Foto Existente</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content login-screen-content background-login">
+    <div class="content-block cadastrar theme-blue-white margin-top-five">
+      <form>
+        <div class="list-block form-label-break-line no-margin-bottom margin-top-15">
+          <ul>
+            <li class="item-content no-padding-left">
+              <div class="item-inner item-noline no-padding-right profile-area">
+                <div class="round-profile">
+                  <div class="img-profile img-profile-cad" style="background-image: url('img/profile/ico-profile.png');" data-img=""></div>
+                  <div class="div-img-editar-imagem btnEditImagem">  
+                    <img class="img-editar-imagem" src="img/profile/ico-edit.png"/>
+                  </div>
+                </div>
+                <div class="logo-profile">
+                  <img class="imgLogo" src="img/logo-min.png"/>
+                </div>
+                <!--
+                <div class="btn-editar-imagem">
+                  <a href="#" class="button color-navy active btnEditImagem button-medium uppercase table-cell" data-i18n="[html]text.ToqueParaEditar;">Toque para Editar</a>
+                </div>
+                -->
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+              <div class="item-title label" data-i18n="[html]text.CPF;">CPF</div>
+                <div class="item-input">
+                  <input type="text" name="cpf" required class="cpf" placeholder="___.___.___-__" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Nome;">Nome</div>
+                <div class="item-input">
+                  <input type="text" name="nome" required placeholder="Nome Completo" data-i18n="[placeholder]text.NomeCompleto;" maxlength="200" value="{{nome}}" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Email;">E-Mail</div>
+                <div class="item-input">
+                  <input type="text" name="email" class="email" placeholder="E-Mail" data-i18n="[placeholder]text.Email;" maxlength="200" />
+                </div>
+              </div>
+            </li>
+            <li class="item-content no-padding-left">
+              <div class="item-inner">
+                <div class="item-title label" data-i18n="[html]text.Celular;">Celular</div>
+                <div class="item-input">
+                  <input type="tel" name="celular" required class="celular telefone" placeholder="(__) _____-____" maxlength="15" value="{{telefone}}"/>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="content-block">
+      <div class="row">
+        <div class="col-100">
+          <a href="#" data-action="register-only" class="button button-big uppercase actionButtonWhite actionButtonText  btnCadastrar submitBtn"><i class="f7-icons color-navy button-icon">floppy_disk</i><span data-i18n="[html]text.FinalizarCadastro;">Finalizar Cadastro</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

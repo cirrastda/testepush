@@ -1,0 +1,132 @@
+div.gratis {
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'arial', sans-serif;
+}
+
+div.gratis .page-content {
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+div.gratis .fullscreen {
+	padding: 0px;
+}
+
+div.conteudo-geral {
+	
+	background-image: url('../img/background/background-geral.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #044391;
+	margin-top: -30px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+
+div.topo {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+}
+
+div.topo p {
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.10em;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+div.topo img {
+	width: 12.50em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ilustracao-centro {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.ilustracao-centro img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 47%;
+}
+
+div.parceria {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.parceria img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2%;
+	width: 23%;
+}
+
+div.parceria p {
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.91em;
+	vertical-align: middle;
+	height: auto;
+	
+}
+
+div.logotipo-empresas {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.logotipo-empresas img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2%;
+	width: 50%;
+}
+
+div.logotipo-empresas p {
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.91em;
+	vertical-align: middle;
+	height: auto;
+	margin-top: 5px;
+	
+}
+
+div.logotipo-empresas span.nome-claro {
+	font-weight: bold;	
+}
+
+div.botao-rodape {
+	background-color: #ffffff;
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 0px;
+	display: inline-block;
+	width: 100%;
+	line-height: 18px;
+}
+
+div.botao-rodape p {
+	font-size: 1.05em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+div.botao-rodape p a {
+	text-decoration: none;
+	color: #03529c;
+}

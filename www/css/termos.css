@@ -1,0 +1,17 @@
+.texto-lgpd{
+    max-height: 280px;
+    overflow-y: scroll;
+}
+
+.input-lgpd, .input-lgpd-login{
+    margin-top: -8px;
+    margin-bottom: -7px;
+    flex-shrink: 1;
+}
+
+.aceito-lgpd{
+    padding-left: 5px;
+    white-space: nowrap;    
+    position: relative;
+    text-overflow: ellipsis;
+}

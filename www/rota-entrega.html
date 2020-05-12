@@ -1,0 +1,25 @@
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+            <div class="center">{{tpar_descricao}} #{{vloc_codigo}}</div>
+          </div>
+        </div>
+
+        <div data-page="rota-entrega" class="page no-navbar">
+          <div class="page-content black-screen ">
+            <div class="no-margin areaMap">
+              <div class="float-navitem-left back">
+                <img src="img/fechamento/seta-pagina-voltar.png" />
+              </div>
+              <div class="bottomLinks">
+                <div class="btnWaze">
+                  <a href="#" data-url="waze://?ll={{refe_latitude}},{{refe_longitude}}&z=10" class="btnOpenWazeImg"><img src="img/fechamento/icon-waze.png" /></a>
+                </div>
+              </div>
+              <div class="noPosition"><span class="blink">Não estamos conseguindo localizar sua posição.</span></div>
+
+              <div id="mapEntrega" ></div>
+            </div>
+          </div>
+        </div>

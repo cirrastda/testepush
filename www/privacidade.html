@@ -1,0 +1,42 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link btnVoltar"><i class="icon icon-back"></i></a></div>
+    <div class="center" data-i18n="[html]menu.Privacidade;">Privacidade</div>
+  </div>
+</div>
+<div data-page="privacidade" class="page no-toolbar no-swipeback">
+  <div class="background-login">
+    <div class="page-content login-screen-content">
+      <div class="content-block content-with-logo">
+        <div class="logo text-center no-margin-top"><img src="img/logo-min.png" width="75%"></div>
+        <form>          
+          <div class="list-block no-margin-bottom margin-top-five">
+            <ul>
+              {{#each tipos_autorizacao}}
+                <li class="item-content no-padding-left">
+                  <div class="item-inner">  
+                    <div class="item-title label wrap-label">{{this.texto}}</div>
+                    <div class="item-input">
+                      <label class="label-switch">
+                        <input type="checkbox" class="chkAutorizacao" name="aprovacao[{{this.codigo}}]" value="{{this.codigo}}" {{this.checked}}>
+                        <div class="checkbox"></div>
+                      </label>
+                    </div>
+                  </div>
+                </li>                   
+              {{/each}}
+            </ul>
+          </div>
+        </form>
+      </div>
+      <div class="content-block">
+        <div class="row">
+          <div class="col-100">
+            <!--<a href="#" class="button button-big button-fill button-raised color-green btnAceitar submitBtn" disabled="disabled">Continuar</a>-->
+            <a href="#" class="button button-big btnSalvarPrivacidade actionButtonWhite actionButtonText submitBtn"><i class="icon-inline icon-ok-blue"></i> <span data-i18n="[html]text.Salvar;">Salvar</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

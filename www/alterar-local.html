@@ -1,0 +1,102 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link btnVoltar"><i class="icon icon-back"></i><span>Voltar</span></a></div>
+    <div class="center">Alterar Local</div>
+  </div>
+</div>
+<div data-page="alterar-local" class="page no-toolbar no-swipeback">
+  <div class="page-content">
+    <div class="title-group no-border-bottom">
+      <div>Informar sua localização para visualizar os fretes compatíveis com seu veículo</div>
+    </div>
+    <form>  
+      <div class="list-block no-margin-bottom margin-top-five">
+        <ul>
+          <li class="item-content ">
+            <div class="item-inner">  
+              <div class="item-title label">CEP</div>
+              <div class="item-input">
+                <input id="cep" type="tel" name="cep" class="cep" placeholder="_____-___" maxlength="9" value="" />
+              </div>
+            </div>
+          </li>       
+          <li class="item-content ">
+            <div class="item-inner">  
+              <div class="item-title label">Endereço</div>
+              <div class="item-input">
+                <input type="text" name="endereco" placeholder="Endereço" maxlength="255" />
+              </div>
+            </div>
+          </li>       
+          <li class="item-content ">
+            <div class="item-inner">  
+              <div class="item-title label">Num.</div>
+              <div class="item-input">
+                <input type="tel" name="numero" class="just-number" placeholder="Número" maxlength="5"  />
+              </div>
+            </div>
+          </li>       
+          <li class="item-content ">
+            <div class="item-inner">  
+              <div class="item-title label">Compl.</div>
+              <div class="item-input">
+                <input type="text" name="complemento" placeholder="Complemento" maxlength="128" />
+              </div>
+            </div>
+          </li>       
+        </ul>
+      </div>            
+      
+      <div class="list-block no-margin-bottom margin-top-five">
+        <ul>
+          <li class="item-content ">
+            <div class="item-inner">  
+              <div class="item-title label">Bairro</div>
+              <div class="item-input">
+                <input type="text" name="bairro" placeholder="Bairro" maxlength="128"  />
+              </div>
+            </div>
+          </li>       
+          <li class="item-content-select ">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar estado" data-open-in="popup">
+              <select name="estado" id="estado" data-old="{{estado}}" required>
+                <option value="">Escolha</option>
+                {{#each arrEstados}}
+                <option value="{{@key}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content ">
+                <div class="item-inner">
+                  <div class="item-title">Estado*</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>       
+          <li class="item-content-select " >
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar cidade" data-open-in="popup" data-virtual-list="true">
+              <select name="cidade" id="cidade" data-old="{{cidade}}" required>
+                <option value="">Escolha</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Cidade*</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>       
+        </ul>
+      </div>            
+    </form>
+
+    <div class="content-block">
+      <div class="row">
+        <div class="col-100">
+          <!--<a href="#" class="button button-big button-fill button-raised color-green btnBuscar submitBtn">Confirmar</a>-->
+          <a href="#" class="button btnBuscar submitBtn">Confirmar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

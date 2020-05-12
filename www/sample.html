@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+
+    <script type="text/javascript" src="js/i18next/i18next.min.js"></script>
+    <!-- <script type="text/javascript" src="js/i18next/i18next.js"></script> -->
+    <script type="text/javascript" src="js/i18next/jquery-i18next.min.js"></script>
+    <!-- <script type="text/javascript" src="js/i18next/jquery-i18next.js"></script> -->
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js" ></script>
+ -->    <!-- <script src="/jquery-i18next.min.js" ></script> -->
+  </head>
+
+  <body>
+
+    <ul class="nav">
+      <li><a href="#" data-i18n="nav.home"></a></li>
+      <li><a href="#" data-i18n="nav.page1"></a></li>
+      <li><a href="#" data-i18n="nav.page2"></a></li>
+    </ul>
+
+    <div class="content">
+      <div data-i18n="[prepend]text.placeholder">:</div>
+      <div class="item-title label-title" data-i18n="[html]input.placeholder">: </div>
+      <input data-i18n="[placeholder]input.placeholder; [title]input.placeholder" />
+    </div>
+
+    <script>
+      function translate() {
+        // use plugins and options as needed, for options, detail see
+        // http://i18next.com/docs/
+        i18next.init({
+          lng: 'pt-br', // evtl. use language-detector https://github.com/i18next/i18next-browser-languageDetector
+          resources: { // evtl. load via xhr https://github.com/i18next/i18next-xhr-backend
+            pt: {
+              translation: {
+                text: {
+                  placeholder: "teste"
+                },
+                input: {
+                  placeholder: "a placeholder"
+                },
+                nav: {
+                  home: 'Home',
+                  page1: 'Page One',
+                  page2: 'Page Two'
+                }
+              }
+            }
+          },       
+          //resources: languageStrings,
+          fallbackLng: 'pt'
+        }, function(err, t) {
+          // for options see
+          // https://github.com/i18next/jquery-i18next#initialize-the-plugin
+          jqueryI18next.init(i18next, $);
+          // start localizing, details:
+          // https://github.com/i18next/jquery-i18next#usage-of-selector-function
+          //$('.nav').localize();
+          $(document).localize();
+        });
+
+      }
+      translate();
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,192 @@
+
+
+i.icon.icon-back {
+    width: 12px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'><path%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23ffffff'%2F><%2Fsvg>");
+}
+
+i.icon.icon-forward {
+    width: 12px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'><path%20d%3D'M2%2C20l-2-2l8-8L0%2C2l2-2l10%2C10L2%2C20z'%20fill%3D'%23ffffff'%2F><%2Fsvg>");
+}
+
+i.icon-truck {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/truck.png");
+}
+
+i.icon-ok {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/ok-white.png");
+}
+
+i.icon-ok-blue {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/ok-blue.png");
+}
+
+i.icon-config-blue {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/config-blue.png");
+}
+
+i.icon-config {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/config-white.png");
+}
+
+i.icon-refresh {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/refresh-white.png");
+}
+
+i.icon-refresh-blue {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon/refresh-blue.png");
+}
+
+i.icon-loading {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/loading.png");
+}
+
+i.icon-login-blue {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/login-blue.png");
+}
+
+i.icon-login {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon/login-white.png");
+}
+
+i.icon-pernoite {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/pernoite.png");
+}
+i.icon-refeicao {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/refeicao.png");
+}
+i.icon-abastecimento {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/abastecimento.png");
+}
+
+i.icon.icon-flag {
+    width: 12px;
+    height: 20px;
+    background-image: url("../img/flag.png");
+}
+
+i.icon.icon-stop {
+    width: 12px;
+    height: 20px;
+    background-image: url("../img/stop.png");
+}
+
+i.icon.icon-circle-gray {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/circle-gray.png");
+}
+i.icon.icon-circle-green {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/circle-green.png");
+}
+i.icon.icon-circle-yellow {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/circle-yellow.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), not all
+i.icon.icon-bars {
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2042%2026'><path%20fill%3D'%23ffffff'%20d%3D'M0%2C0h4v4H0V0z%20M8%2C1h34v2H8V1z%20M0%2C11h4v4H0V11z%20M8%2C12h34v2H8V12z%20M0%2C22h4v4H0V22z%20M8%2C23h34v2H8V23z'%2F><%2Fsvg>");
+    height: 13px;
+}
+
+i.icon.icon-bars {
+    width: 21px;
+    height: 14px;
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2042%2026'><path%20fill%3D'%23ffffff'%20d%3D'M0%2C0h4v4H0V0z%20M8%2C1h34v2H8V1z%20M0%2C11h4v4H0V11z%20M8%2C12h34v2H8V12z%20M0%2C22h4v4H0V22z%20M8%2C23h34v2H8V23z'%2F><%2Fsvg>");
+}
+
+.icon-history {
+    background: url('../img/ico-history.png') no-repeat center center;
+    width: 29px; 
+    height: 29px;
+}
+
+.icon-config {
+    background: url('../img/ico-config.png') no-repeat center center;
+    width: 29px; 
+    height: 29px;
+}
+
+.icon-logoff,
+.icon-logoff-white {
+    background: url('../img/ico-logoff.png') no-repeat center center;
+    width: 29px; 
+    height: 29px;
+}
+
+.icon-logoff-white {
+    background-image: url('../img/ico-logoff-white.png');
+}
+
+
+i.icon-check {
+    background-image: url(../img/ico-check-white.png);
+}
+
+i.icon-axis {
+    background-image: url('../img/icon/ico-axis-white.png');
+}
+
+i.icon-axis-blue {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/icon/ico-axis-blue.png');
+}
+
+i.icon-calendar {
+    background-image: url(../img/ico-calendar-white.png);
+}
+
+i.icon-car {
+    background-image: url(../img/ico-car-white.png);
+}
+
+i.icon-pin {
+    background-image: url(../img/ico-pin-white.png);
+}
+
+i.icon-form {
+    background-image: url(../img/ico-form-white.png);
+}
+
+i.icon-save {
+    background-image: url(../img/ico-save-white.png);
+}
+
+i.icon-trash {
+    background-image: url(../img/ico-trash-white.png);
+}
+

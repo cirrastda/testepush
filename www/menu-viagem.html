@@ -1,0 +1,98 @@
+<!--
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link btnVoltar"><img src="img/fechamento/seta-descricao-de-viagem.png" /></a></div>
+    <div class="center">
+    	<div class="nav-reduce uppercase" data-i18n="[html]menu.EventosViagem;">Eventos da Viagem</div>
+    </div>
+	<div class="subnavbar">
+		<div class="description-navbar uppercase" data-i18n="[html]text.UsoMenu;">Use esse menu para informar os eventos de sua viagem</div>
+	</div>
+  </div>
+</div>
+ <div data-page="menu-viagem" class="page with-subnavbar">
+    <div class="page-content black-screen">
+-->
+
+    <div class="iniciar_viagem" style="display: {{#unless libera_inicio}}none{{/unless}}{{#if libera_inicio}}block{{/if}};">
+        <button class="fullButton darkButton darkButtonBlue btnIniciaViagem iniciar_viagem" data-i18n="[html]menu.IniciarViagem;" id="iniciar_viagem"></button>
+<!--         <div class="list-block no-margin-bottom margin-top-10">
+          <div class="row menu-row">
+            <div class="col-33 menu-item {{#if libera_inicio}}iniciar_viagem{{/if}}" id="iniciar_viagem">
+              <a href="#" >
+                <img src="img/fechamento/iniciar-viagem-{{#if libera_inicio}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_inicio}}class="grey"{{/unless}} data-i18n="[html]menu.IniciarViagem;">Iniciar Viagem</span>
+              </a>
+            </div>
+          </div>          
+        </div> -->
+    </div>
+    <div class="abrir_menu" style="display: none;">
+        <button class="fullButton darkButton darkButtonBlue btnExibirMenuViagem" data-i18n="[html]menu.ExibirMenuViagem;" id="exibir_menu_viagem"></button>
+    </div>    
+    <div class="viagem_andamento black-screen" style="display: {{#unless libera_operacoes}}none{{/unless}}{{#if libera_operacoes}}block{{/if}};">
+        <div class="list-block no-margin-bottom margin-top-10">
+          <div class="menu-topo">
+            <div class="btnFecharMenu">
+              <!-- <span data-i18n="[html]text.FecharMenu;"></span> -->
+              <img src="img/icon/ico-axis-white.png" />
+            </div>
+          </div>
+          <div class="row menu-row">
+            <div class="col-33 menu-item {{#if libera_parada}}pernoite{{/if}}" id="pernoite" >
+              <a href="#" >
+                <img src="img/fechamento/pernoite-{{#if libera_parada}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_parada}}class="grey"{{/unless}} data-i18n="[html]menu.Pernoite;">Pernoite</span>
+              </a>
+            </div>
+            <div class="col-33 menu-item {{#if libera_operacoes}}historico{{/if}}" id="historico" >
+              <a href="#" >
+                <img src="img/fechamento/historico-{{#if libera_operacoes}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_operacoes}}class="grey"{{/unless}} data-i18n="[html]menu.HistoricoViagem;">Histórico da Viagem</span>
+              </a>
+            </div>            
+            <div class="col-33 menu-item {{#if libera_reinicio}}reiniciar_viagem{{/if}}" id="reiniciar_viagem" >
+              <a href="#" >
+                <img src="img/fechamento/reiniciar-viagem-{{#if libera_reinicio}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_reinicio}}class="grey"{{/unless}} data-i18n="[html]menu.ReiniciarViagem;">Reiniciar Viagem</span>
+              </a>
+            </div>            
+          </div>
+          <div class="row menu-row">
+            <div class="col-33 menu-item {{#if libera_operacoes}}mensagem{{/if}}" id="mensagem" >
+              <a href="#" >
+                <img src="img/fechamento/mensagem-{{#if libera_operacoes}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_operacoes}}class="grey"{{/unless}} data-i18n="[html]menu.Mensagem;">Mensagem</span>
+              </a>
+            </div>
+            <div class="col-33 menu-item {{#if libera_parada}}abastecimento{{/if}}" id="abastecimento" >
+              <a href="#" >
+                <img src="img/fechamento/abastecimento-{{#if libera_parada}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_parada}}class="grey"{{/unless}} data-i18n="[html]menu.Abastecimento;">Abastecimento</span>
+              </a>
+            </div>
+            <div class="col-33 menu-item {{#if libera_parada}}refeicao{{/if}}" id="refeicao" >
+              <a href="#" >
+                <img src="img/fechamento/refeicao-{{#if libera_parada}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_parada}}class="grey"{{/unless}} data-i18n="[html]menu.Refeicao;">Refeição</span>
+              </a>
+            </div>            
+          </div>
+          <button class="fullButton darkButton darkButtonRed btnFinalizaViagem finalizar_viagem" id="finalizar_viagem">
+            <img src="img/icon/FinalizarViagem.png" />&nbsp;<span data-i18n="[html]menu.FinalizarViagem;"></span>
+          </button>
+
+<!--           <div class="col-33 menu-item {{#if libera_operacoes}}finalizar_viagem{{/if}}" id="finalizar_viagem" >
+              <a href="#" >
+                <img src="img/fechamento/finalizar-viagem-{{#if libera_operacoes}}menu-de-eventos{{else}}grey{{/if}}.png"/><br/>
+                <span {{#unless libera_operacoes}}class="grey"{{/unless}} data-i18n="[html]menu.FinalizarViagem;">Finalizar Viagem</span>
+              </a>
+            </div>
+        </div>
+ -->
+    </div>
+<!--
+	</div>
+
+</div>
+-->

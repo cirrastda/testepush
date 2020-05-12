@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "874075977037",
+    "project_id": "buonnydriver"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874075977037:android:b7502119dfd405d6",
+        "android_client_info": {
+          "package_name": "com.buonny.buonnydrivermessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AAAAy4L89U0:APA91bFwSJGkY1PpHttWo-dgabh3AnNhSJEQE76rKGaHTAeUkHnEVDGxbRqqEpiAolCANSOi07qq0gpWSidPD2NlpP9blT8IuFQrGJYjTUS74bU82zQ9xjepPJZ-cQW9VfpuH2_s0qza"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

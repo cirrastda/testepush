@@ -1,0 +1,335 @@
+.list-entregas {
+	margin-top: 10px;
+}
+
+.list-entregas ul li {
+  color: #fff !important;
+  text-transform: none !important;
+}
+
+.list-entregas .item-content{    
+    min-height: 10px !important;
+    padding-left: 0px !important;
+}
+
+.list-entregas.list-block ul:after,
+.list-entregas ul:after,
+.list-entregas.list-block ul:before,
+.list-entregas ul:before {
+	background-color: transparent !important;
+}
+
+.list-entregas.list-block .item-inner:after,
+.list-entregas .item-inner:after{
+	height: 0px !important;   
+
+}
+
+.list-entregas .item-inner{
+	border-bottom: 1px dashed #fff;
+	font-size: 11px !important;
+
+}
+
+.list-entregas .item-inner .item-data {
+	width: calc(100% - 120px);
+
+}
+
+.list-entregas .item-inner .item-input {
+	padding-left: 15px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	line-height: 15px;
+}
+
+.list-entregas .item-inner .item-status {
+	border: 1px solid #fff;
+	border-radius: 3px;
+	--moz-border-radius: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.list-entregas .item-inner .item-status span{
+	height: 100%
+}
+.list-entregas .item-inner .item-status i{
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.bullet-status {
+	font-size: 13px !important;
+	margin-left: 20px;
+}
+.bullet-entregue {
+	color: green;
+}
+
+.bullet-rejeitado {
+	color: red;	
+}
+
+.bullet-pendente {
+	color: gray;		
+}
+
+.bullet-entregando {
+	color: yellow;		
+}
+
+.bullet-pendente-confirmacao {
+	color: gold;			
+}
+
+/* ENTREGAS */
+.headerEntrega {
+    padding: 5px 5px;
+}
+
+.headerEntrega .status-entrega {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.headerEntrega .status-entrega.portal {
+    background-color: gold;
+}
+
+.headerEntrega .status-entrega.app {
+    background-color: green;
+}
+
+.headerEntrega .status-entrega.rejeitada {
+    background-color: red;
+}
+
+.headerEntrega .status-entrega.app.portal {
+    background-color: gold;
+    border: 7px solid green;
+    width: 26px;
+    height: 26px;
+}
+
+table.entrega td {
+	font-size: 10px;
+}
+
+table.entrega td.imgInfo {
+    width: 40px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table.entrega span.titulo {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+table.entrega td.info {
+    padding-left: 5px;
+    width: auto;
+}
+
+.link-show-map {
+	background-color: #37383A;
+	text-transform: uppercase;
+	padding: 5px;
+
+    vertical-align: middle;
+    display: inline-block;
+    width: calc(100% - 22px);
+
+	padding-left: 15px;	
+}
+.link-show-map .imgVisRota {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+div.infoEntrega {
+	text-align: center;
+	color: #b7b7b7;
+	padding: 15px;
+}
+
+div.infoEntrega div.divConfirma {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	vertical-align: middle;
+}
+
+div.infoEntrega div.divBtnAcao {
+	margin-top: 5px !important;
+}
+
+div.mapaEntrega .seta {
+	float: right;
+	margin-top: 5px;
+
+}
+
+div.areaMap div.bottomLinks {
+	vertical-align: bottom;
+    bottom: 20px;
+    position: absolute;
+    right: 10px;
+    z-index: 9999
+}
+
+.list-block.confirmar-entrega ul:before {
+	height: 0px;
+} 
+.list-block.confirmar-entrega ul:after {
+	height: 0px;
+} 
+
+.list-block.confirmar-entrega .item-inner:after {
+	height: 0px;
+} 
+
+.list-block.confirmar-entrega {
+	margin-left: 15px;
+	margin-right: 15px;
+} 
+
+.list-block.confirmar-entrega .item-content{
+	padding-left: 0px;
+	border: 1px solid #999999;
+	border-radius: 4px;
+	margin-bottom: 10px;
+} 
+
+.list-block.confirmar-entrega .item-inner .label {
+	width: 50px;
+	text-align: center;
+}
+
+.list-block.confirmar-entrega .item-inner {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #999;
+}
+.list-block.confirmar-entrega .item-inner input {
+	text-transform: uppercase;
+	color: #999;
+	font-size: 12px;
+}
+
+.list-block.confirmar-entrega .rodape {
+    width: calc(100% - 30px);
+}
+
+
+/* FOTOS */
+
+.tabs .tab#fotos {
+    position: relative;
+}
+
+#fotos .xcol-25 {
+    width: calc(25% - 3px);
+    height: 80px;
+    display: inline-block;
+}
+
+#fotos .xcol-25 .foto {
+    display: block;
+    position: relative;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    margin: 5px;
+    background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fotos .xcol-25 .foto .sync-state {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 3px;
+    right: 3px;
+    border-radius: 50%;
+    background-size: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#fotos .xcol-25 .foto .sync-state.yes {
+    background-color: #177f26;
+    background-image: url(../img/ico-check-white.png);
+}
+
+#fotos .xcol-25 .foto .sync-state.no {
+    background-color: #FFFFFF;
+    background-image: url(../img/ico-check.png);
+}
+
+#fotos .bubbles {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+
+#fotos .bubbles a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #113a70;
+    border: #FFFFFF solid 2px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#fotos .bubbles a.btnCamera {
+    background-image: url(../img/profile/ico-camera-white.png);
+}
+
+#fotos .bubbles a.btnGaleria {
+    background-image: url(../img/profile/ico-gallery-white.png);
+}
+
+/* Signature Pad */
+#signature-pad {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  max-height: 460px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+  border-radius: 4px;
+}
+
+#signature-pad--body
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+}

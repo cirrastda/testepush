@@ -1,0 +1,94 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left"><a href="#" class="back link"><i class="icon icon-back"></i><span>Voltar</span></a></div>
+		<div class="center">Informar Localização</div>
+	</div>
+</div>
+
+<div data-page="checkin" class="page">
+	<div class="page-content">
+		<div id="maps" style="height:300px;width:100%;"></div>
+<!-- 
+		<div class="botao_mapa recarregar_posicao" style="display: none">
+			<i class="f7-icons color-gray font-14-bold" >reload</i>
+		</div>
+ -->
+		<form id="frmCheckin">
+			<div class="content-block no-margin">
+				<h3 id="title_local" class="margin-bottom-5">Seu local:</h3>
+				<div id="rua" class="item-input">{{rua}}</div>
+				<div id="bairro" class="item-input">{{bairro}}</div>
+				<div id="cidade_estado" class="item-input">{{cidade}}</div>
+				<div id="cep" class="item-input">{{cep}}</div>
+			</div>
+			<div class="popup popup-notificacao">
+				<div class="popup-inner">
+					<a href="#" class="fechar_popup"><i class="f7-icons color-white">close_round_fill</i></a>
+			    	<h1 id="popTitulo">{{titulo}}</h1>
+			    	<p id="popTexto">{{notificacao}}</p>
+			    </div>
+			  </div>
+		    <div class="toolbar toolbar-green tabbar tabbar-labels tab_link_encerrar" style="position: absolute">
+				<div class="toolbar-inner toolbar-padding-0">
+					<a href="#" class="tab-link border-right-tab" id="btnConfirmar">
+		                <i class="f7-icons color-white">check_round</i>
+						<span class="tabbar-label color-white">Confirmar</span>
+					</a>
+					<a href="#" class="tab-link bg-orange" id="btnAlterarLocal">
+		                <i class="f7-icons color-white">compose</i>
+						<span class="tabbar-label color-white">Alterar Local</span>
+					</a>
+				</div>
+		    </div>
+
+     	</form>
+	</div>
+	<script id="tplmodal" type="text/template7">
+		<br/>
+	    <!--<small>Informando um local de destino fará com que a busca pelos fretes retorne dados mais exatos de acordo com sua necessidade</small>-->
+	    <div class="list-block margin-top-five margin-bottom-5">
+		  <ul>
+		  	<li class="alerta" id="alertaAddDestino" style="display: none;">Informe se o Check-In possuirá destino.</li>
+		    <li>
+		      <label class="label-radio item-content">
+		        <input type="radio" name="add-destino" class="add-destino" value="S">
+		        <div class="item-inner">
+		          <div class="item-title">Sim</div>
+		        </div>
+		      </label>
+		    </li>
+		    <li>
+		      <label class="label-radio item-content">
+		        <input type="radio" name="add-destino" class="add-destino" value="N">
+		        <div class="item-inner">
+		          <div class="item-title">Não</div>
+		        </div>
+		      </label>
+		    </li>
+		  </ul>
+		</div>
+		<div class="list-block destino margin-top-five margin-bottom-5" style="display: none;">
+			<ul>
+		      <li class="item-content " style="padding-left: 0px;">
+		        <div class="item-inner">  
+		          <div class="item-title label">Destino:</div>
+		        </div>
+		      </li>  
+	        	<li class="item-content-select ">
+                	<div class="item-content ">
+						<select name="destino" id="destino" data-old="{{destino}}" class="select_field">
+							<option value="">Escolha</option>
+							{{#each arrDestino}}
+							<optgroup label="{{name}}">
+							    {{#each values}}
+							    	<option value="{{@key}}">{{this}}</option>
+							    {{/each}}
+							{{/each}}
+						</select>	                  	
+		            </div>
+	          </li>   
+			  <li class="alerta" id="alertaDestino" style="display: none;">Informe o destino.</li>
+			</ul>
+		</div>
+	</script>
+</div>

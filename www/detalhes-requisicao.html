@@ -1,0 +1,145 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center" data-i18n="[html]menu.DetalhesRequisicao;">Detalhes da Requisição</div>
+  </div>
+</div>
+
+<div  data-page="detalhes-requisicao" class="page">
+  <div id="page-detalhe" class="page-content content-big-navbar"  style="height:calc(100% - 50px);">
+    <form>
+      <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.InformacoesEmpresa;">INFORMAÇÕES DA EMPRESA</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+        <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.RazaoSocial;">Razão Social</span>:</div>
+                <div class="item-input-content">
+                  {{razao_social}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Cidade;">Cidade</span>/<span data-i18n="[html]text.UF;">UF</span>:</div>
+                <div class="item-input-content">
+                  {{cidade}}/{{estado}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Telefone;">Telefone</span>:</div>
+                <div class="item-input-content">
+                  {{contato.telefone}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Contato;">Contato</span>:</div>
+                <div class="item-input-content">
+                  {{contato.telefone_contato}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Celular;">Celular</span>:</div>
+                <div class="item-input-content">
+                  {{contato.celular}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Contato;">Contato</span>:</div>
+                <div class="item-input-content">
+                  {{contato.celular_contato}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Email;">Email</span>:</div>
+                <div class="item-input-content">
+                  {{contato.email}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Contato;">Contato</span>:</div>
+                <div class="item-input-content">
+                  {{contato.email_contato}}
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.EstaBuscando;">ESTÁ BUSCANDO</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+        <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.TipoVeiculo;">Tipo Veículo</span>:</div>
+                <div class="item-input-content">
+                  {{tipo_veiculo}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.Carroceria;">Tipo Carroceria</span>:</div>
+                <div class="item-input-content">
+                  {{tipo_carroceria}}
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content">
+              <div class="item-inner">
+                <div class="item-title label"><span data-i18n="[html]text.RealizadaA;">Realizada à</span>&nbsp;</div>
+                <div class="item-input-content">
+                  {{data_cadastro}}
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+  <div class="toolbar toolbar-with-buttons tabbar tabbar-labels tab_link_encerrar">
+      <div class="toolbar-inner toolbar-padding-0  border-top-tab">
+          <a data-rel="external" href="#" class="tab-link border-right-tab" id="btnPhone" style="display: none;">
+              <img src="img/icon/telefone.png" />
+              <span class="tabbar-label" data-i18n="[html]text.ContactarTelefone;">Contactar por Telefone</span>
+          </a>
+          <a data-rel="external" href="#" class="tab-link" id="btnEmail" style="display: none;">
+              <img src="img/icon/mail.png" />
+              <span class="tabbar-label" data-i18n="[html]text.ContactarEmail;">Contactar por E-Mail</span>
+          </a>
+      </div>
+  </div>
+</div>

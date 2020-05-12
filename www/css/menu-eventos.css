@@ -1,0 +1,70 @@
+.divMenuViagem {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    vertical-align: bottom;
+    z-index: 9999999;  
+    text-align: center;  
+}
+
+.divMenuViagem div{
+    width: 100%;
+}
+
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 50%;
+    padding: 2%;
+}
+
+.menu-item span {
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+
+.menu-item span.grey {
+
+    color: #ccc;
+}
+
+.menu-topo {
+    height: 30px;
+}
+
+.btnFecharMenu {
+    float: right;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.btnFecharMenu img{
+    width: 24px;
+}
+
+.btnIniciaViagem {
+    margin-bottom: 24px;
+}
+
+.btnExibirMenuViagem {
+    margin-bottom: 24px;   
+}
+
+.btnFinalizaViagem {
+    margin-bottom: 10px;
+}
+
+.btnFinalizaViagem img {
+    width: 24px;
+    vertical-align: middle;
+}

@@ -1,0 +1,32 @@
+/*
+.popover-angle:after {
+    background-color: #113a70;
+}
+*/
+.popover {
+  width: 300px;
+}
+
+
+.popover-mini {
+    width: 200px !important;
+}
+
+/*.popover .list-block .popover-link {
+	margin: 5px;
+}
+*/
+.popover-link {
+    background-color: #fff !important;
+    color: #18a9b6 !important;
+    padding: 10px;
+}
+
+.popover-link-selected {
+    background-color: #10d4e5 !important;
+    color: #fff !important;
+}
+
+.popover-angle:after {
+    background-color: #fff;
+}

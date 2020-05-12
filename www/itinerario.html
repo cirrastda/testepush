@@ -1,0 +1,51 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a></div>
+    <div class="center">Escolha de Destino</div>
+  </div>
+</div>
+<div data-page="itinerario" class="page">
+  <div class="page-content with-actionsbar pull-to-refresh-content itinerario">
+    <div class="pull-to-refresh-layer">
+      <div class="preloader"></div>
+      <div class="pull-to-refresh-arrow"></div>
+    </div>
+    <div class="list-block no-margin">
+      <ul>
+      {{#each itinerario}}
+        <li>
+          <a href="#" data-codigo="{{this.vloc_codigo}}" class="item-link item-content abrirEntrega">
+            <div class="headerEntrega item-inner">
+              <table class="dados entrega">
+                <tr>
+                  <td rowspan="4" class="sts"><span class="status-entrega {{img_status}}"></span></td>
+                  <td class="lbl">Alvo:</td>
+                  <td class="info">{{refe_descricao}}</td>
+                </tr>
+                <tr>
+                  <td class="lbl">Endereço:</td>
+                  <td class="info">{{refe_rua}}</td>
+                </tr>
+                <tr>
+                  <td class="lbl">Bairro:</td>
+                  <td class="info">{{refe_bairro}}</td>
+                </tr>
+                <tr>
+                  <td class="lbl">Tipo:</td>
+                  <td class="info">{{tpar_descricao}}</td>
+                </tr>
+              </table>
+            </div>
+          </a>
+        </li>
+      {{/each}}  
+      </ul>   
+    </div>
+  </div>
+  <div class="actionsbar">
+    <div class="actionsbar-inner">    
+      <a href="#" class="action btnFinalizarViagem {{#if viag_data_fim_provisorio}}pendente{{/if}}"><i class="icon icon-flag"></i>Finalizar Viagem</a>
+      <a href="#" data-popover=".popover-links" class="action btnInfoParada {{#if viag_data_fim_provisorio}}pendente{{/if}}"><i class="icon icon-stop"></i>Informar Parada</a>
+    </div>
+  </div>    
+</div>

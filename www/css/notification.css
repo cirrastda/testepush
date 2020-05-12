@@ -1,0 +1,17 @@
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.notifications {
+    background-color: #042364;
+    color: #fff;
+    border-bottom: 4px solid white;
+}
+
+.dark-notification {
+	background-color: #2e2e2e !important;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+    box-shadow: 0px 1px 8px #000;
+}

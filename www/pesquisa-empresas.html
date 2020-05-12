@@ -1,0 +1,100 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center" data-i18n="[html]text.PesquisarEmpresa;">Pesquisar Empresa</div>
+  </div>
+</div>
+<div data-page="pesquisa-empresas" class="page">
+  <div class="page-content content-big-navbar">
+    <form>
+      
+      <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.Localidade;">Localidade</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar estado" data-open-in="popup">
+              <select name="estado" data-old="{{estado}}" required>
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrEstados}}
+                <option value="{{@key}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.UF;">UF</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>       
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar cidade" data-open-in="popup">
+              <select name="cidade" data-old="{{cidade}}" required>
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.Cidade;">Cidade</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>       
+          <li class="item-content li-raio" style="display: none;">
+            <div class="item-inner">  
+              <div class="item-title label" data-i18n="[html]text.Raio;" >Raio: <br/><span class="text_12"><b id="raio_value">10</b> Km<span></div>
+              <div class="item-input">
+                <div class="range-slider">
+                  <input type="range" name="raio" min="0" max="500" step="1" value="10" />
+                </div>
+                <span class="text_12" style="display: inline-block; margin-bottom: 5px" data-i18n="[html]text.APartirCidadeUf;">* A partir da Cidade/UF informados</span>
+              </div>
+            </div>
+          </li>   
+        </ul>
+      </div>
+
+      <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.Cliente;">Cliente</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li class="item-content t">
+            <div class="item-inner">  
+              <div class="item-title label" data-i18n="[html]text.Nome;">Nome</div>
+              <div class="item-input">
+                <input type="text" name="nome" placeholder="Nome" maxlength="255" />
+              </div>
+            </div>
+          </li>   
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar categoria" data-open-in="popup">
+              <select name="categoria" data-old="{{categoria}}" required>
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrCategorias}}
+                <option value="{{this.key}}">{{this.value}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title"  data-i18n="[html]text.Categoria;">Categoria</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>    
+        </ul>
+      </div>
+     
+      <div class="content-block">
+        <div class="row">
+          <div class="col-100">
+            <!-- <a href="#" id="btnPesquisar" class="button button-big button-fill button-raised color-green ">Pesquisar Empresa</a> -->
+            <button class="fullButton darkButton darkButtonBlue button100NoMargin" id="btnPesquisar"><span data-i18n="[html]text.PesquisarEmpresa;">Pesquisar Empresa</span></button>                
+            <!-- <a href="#" id="btnPesquisar" class="button">Pesquisar Empresa</a> -->
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+ 
+</div>

@@ -1,0 +1,113 @@
+
+.navbar {
+    /*background: #303030;*/
+    background: linear-gradient(to right, #2e2e2e 0%, #2e2e2e 50%, #393939 50%, #393939 100%);
+    
+    color: #FFF;
+    height: 50px;
+    box-shadow: 0px 1px 8px #000;
+
+}
+
+.navbar-viagem {
+    color: #18a9b6 !important;
+    font-weight: bold;
+}
+
+.navbar-viagem .icon-only {
+    min-width: 30px !important;
+}
+
+.navbar-viagem img {
+    width: 18px;
+}
+
+.subnavbar {
+    background: linear-gradient(to right, #2e2e2e 0%, #2e2e2e 50%, #393939 50%, #393939 100%);
+    color: #FFF;
+    height: 20px;
+}
+
+.navbar:after {
+    background-color: transparent !important;
+}
+.subnavbar:after {
+    background-color: transparent !important;
+}
+
+.navbar a.link, 
+.navbar a.button, 
+.subnavbar a.link, 
+.subnavbar a.button {
+	color: #fff;
+    border-color: #fff;
+}
+
+.navbar a.button.active,
+.subnavbar a.button.active {
+    background-color: #fff;
+    color: #113a70;
+}
+
+.subnavbar a.button.new {
+    background-image: url(../img/ico-redsign.png);
+    background-position: 10px center;
+    background-size: 12px;
+    background-repeat: no-repeat;
+}
+
+.navbar .center {
+	font-weight: 600;
+    font-size: 22px;
+}
+
+.navbar-fixed .page>.searchbar, .navbar-fixed>.searchbar, .navbar-through .page>.searchbar, .navbar-through>.searchbar {
+    top: 50px;
+}
+
+.nav-reduce {
+    font-size: 18px;
+}
+
+.description-navbar {
+    font-size: 11px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+
+}
+.navbar-fixed .page-content.with-subnavbar, .navbar-fixed .subnavbar~.page-content, .navbar-fixed .with-subnavbar .page-content, .navbar-through .page-content.with-subnavbar, .navbar-through .subnavbar~.page-content, .navbar-through .with-subnavbar .page-content {
+    padding-top: 70px !important; 
+}
+
+.navbar-on-left .center, .navbar-on-left .fading, .navbar-on-left .left, .navbar-on-left .right, .navbar-on-left .subnavbar {
+    animation: unset;
+    -webkit-animation: unset;
+}
+
+.navbar .btnExcluir i {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar .navbar-inner .center{
+    white-space: nowrap;
+}
+
+.navbar .navbar-inner .center br{
+    display: none;
+}
+
+.subnavbar.navy {
+    /*background: linear-gradient(to right, #10d4e5 0%, #10d4e5 85%, #18a9b6 85%, #18a9b6 100%) !important;*/
+    /*background: linear-gradient(top, #10d4e5 0%, #18a9b6 50%) !important;*/
+    background: #18a9b6 !important;
+    /*border-top: 1px dotted #fff;*/
+    height: 36px;
+    box-shadow: 0px 1px 8px #000;
+}
+
+.totalizador-subnav {
+    font-size: 14px;
+    font-style: italic;
+}

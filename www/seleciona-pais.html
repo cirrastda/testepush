@@ -1,0 +1,46 @@
+        <div data-page="seleciona-pais" class="page fullpage page-seleciona-pais">
+          <div class="page-content">
+            <div class="content-block">
+              <div class="bg-image"><img src="img/background/caminhao-sel-pais.png" width="100%"></div>
+            </div>   
+            <div class="content-block rodape-sel-pais" >
+              <form >
+                <div class="data-form flex">
+                  <div class="list-block absbottom">
+                    <ul>    
+                      <li>
+                        <div class="item-content data-line">
+                          <div class="item-title label-title" data-i18n="[html]text.InformePais;">: </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar país" data-open-in="popup">
+                          <div class="item-content data-line">
+                            <select name="pais" data-old="{{pais}}" required>
+                              <option value="" data-i18n="[text]text.Escolha"></option>
+                              {{#each arrPaises}}
+                              <option value="{{@key}}">{{this}}</option>
+                              {{/each}}
+                            </select>
+                            <div class="item-inner">
+                              <div class="item-after left data-value data-select"></div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <br/>
+                        <a href="#" class="button button-big active submitBtn uppercase btnSelecionaPais">
+                        <i class="icon-inline icon-login"></i><span data-i18n="[html]text.Continuar;"></span></a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </form>
+              <br/>
+            </div>
+
+
+          </div>
+        </div>

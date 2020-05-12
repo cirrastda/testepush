@@ -1,0 +1,104 @@
+<div class="navbar">
+  <div class="navbar-inner navbar-viagem">
+    <div class="left menu-button">
+      <img src="img/icon/menu.png" width="32" />
+    </div>
+    <div class="center frete-button">
+      <img src="img/icon/DescerFretes.png" />
+    </div>
+  </div>
+</div>
+
+<div data-page="menu-click" class="page no-swipeback">
+  <div class="page-content" >
+    <div class="list-block no-margin-bottom margin-top-five">
+      <ul>
+        <li class="no-padding-left" style="font-size:13px;">
+          <div class="item-inner checkin-area">  
+            <img  id="checkin_icon" src="img/icon/local.png" width="35" />
+            <div id="checkin_loading">
+              <span class="preloader"></span>
+            </div>
+<!--                             
+            <div id="checkin_gps_desativado" style="margin-left: 10px; text-align: left; width: 100%;display:none">
+              Não foi possivel encontrar sua localização<br/>
+              <small>Verifique seu GPS!</small><br/>
+              <small class="link">Clique aqui para atualizar</small>
+            </div> -->
+
+            <div id="checkin_nao_realizado" style="margin-left: 10px; text-align: left; width: 100%;display:none">
+              <span data-i18n="[html]text.NaoFoiPossivelLocalizacao;">Não foi possivel encontrar sua localização</span><br/>
+              <small data-i18n="[html]text.PrecisaInformarLocalizacao;">Você precisa informar sua localização para poder visualizar os fretes próximos</small>
+              <!--<br/>
+              <small class="link">Clique aqui para atualizar</small>-->
+            </div>
+
+            <div id="checkin_realizado" style="margin-left: 10px; text-align: left; width: 100%; display:none">
+              <div><span data-i18n="[html]text.LocalizacaoInformada;">Localização informada em </span>: <span id="checkin_date"></span></div>
+              <div id="checkin_endereco"></div>
+              <div id="checkin_bairro_cidade_estado"></div>
+              <!--<a href="#" class="checkin">Atualizar Localização</a>-->
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>                  
+    <div class="list-block no-margin-bottom margin-top-10">
+      <div class="row menu-row">
+        <div class="col-33 menu-click" id="fretes" style="display: none">
+          <button type="button" class="btn btn-light freteBtn fretes">
+            <img src="img/menu/FreteBuscar.png" class="ico-menu-frete" />
+            <div id="divQtdFretes"></div>
+            <span style="line-height: 20px; margin-top: -6px" data-i18n="[html]menu.BuscarCargas;">Buscar <br/>cargas</span>
+          </button>
+        </div>
+        <div class="col-33 menu-click ">
+          <button type="button" class="btn btn-light freteBtn ofertas">
+            <img src="img/menu/FreteOferta.png" class="ico-menu-frete" />
+            <div id="divQtdOfertas"></div>
+            <span style="line-height: 20px; margin-top: -6px" data-i18n="[html]menu.OfertasCargas;">Ofertas <br/>de cargas</span>
+          </button>
+        </div>
+        <div class="col-33 menu-click ">
+          <button type="button" class="btn btn-light freteBtn meus-fretes">
+            <img src="img/menu/FreteSeusFretes.png" class="ico-menu-frete" />
+            <span data-i18n="[html]menu.SeusFretes;">Seus Fretes</span>
+          </button>
+        </div>
+        <div class="col-33 menu-click ">
+          <button type="button" class="btn btn-light freteBtn menu-historico">
+            <img src="img/menu/FreteHistorico.png" class="ico-menu-frete" />
+            <span data-i18n="[html]menu.Historico;">Histórico</span>
+          </button>
+        </div>
+        <div class="col-33 menu-click ">
+          <button type="button" class="btn btn-light freteBtn requisicoes">
+            <img src="img/menu/FreteAgregar.png" class="ico-menu-frete" />
+            <span data-i18n="[html]menu.Agregar;">Agregar-se</span>
+          </button>
+        </div>                                           
+        <div class="col-33 menu-click ">
+          <button type="button" class="btn btn-light freteBtn empresas">
+            <img src="img/menu/FreteEmpresas.png" class="ico-menu-frete" />
+            <span data-i18n="[html]menu.Empresas;">Empresas</span>
+          </button>
+        </div>                                           
+        <div class="col-33">&nbsp;</div>
+      </div>
+      <div class="rodape rodape-menu">
+        <button class="fullButton darkButton darkButtonBlue checkin button100 btnAtualizarPosicao"><img src="img/icon/AtualizarPosicao.png" /><span data-i18n="[html]menu.AtualizarPosicao;">Atualizar Posição</span></button>    
+      </div>
+      <div class="toolbar toolbar-rodape tabbar tabbar-labels tab_link_menu_opcoes" id="tab_link_menu_opcoes">
+          <div class="toolbar-inner toolbar-padding-0">
+            <a href="#" class="tab-link border-right-tab tabbar-full-label tabbar-inactive" id="btnProcurarViagens">
+                <span class="tabbar-label" data-i18n="[html]menu.ProximasViagens;">Próximas Viagens</span>
+            </a>
+            <a href="#" class="tab-link tabbar-full-label tabbar-active" id="btnFretes">
+                <span class="tabbar-label" data-i18n="[html]menu.Fretes;">Fretes</span>            
+            </a>
+          </div>
+      </div>      
+    </div>                  
+  </div>
+</div>

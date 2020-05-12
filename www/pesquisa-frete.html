@@ -1,0 +1,250 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center" data-i18n="[html]menu.PesquisarFretes;">Pesquisar Fretes</div>
+  </div>
+</div>
+<div data-page="pesquisa-frete" class="page">
+  <div class="page-content">
+    <form>
+      <div class="content-block-title title-mini2 title-dark"><span data-i18n="[html]text.TipoBusca;">Tipo de busca</span>: </div>
+        <div class="list-block margin-15 no-margin-top-important">
+          <ul>
+            <li class="no-padding-left">
+              <div class="block block-strong">
+                <label for="proximo" class="radio label-buscar-por">
+                  <input type="radio" name="buscar-por" id="proximo" value="proximo">
+                    <i class="icon-radio"></i>
+                    <span data-i18n="[html]text.ProximosAMim;">Próximos a mim</span>
+                </label>
+                <label for="cidade" class="radio label-buscar-por">
+                  <input type="radio" name="buscar-por" id="cidade" value="cidade">
+                      <i class="icon-radio"></i>
+                      <span data-i18n="[html]text.PorCidade;">Por cidade</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      <div id="origem">
+        <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.Origem;">ORIGEM</div>
+        <div class="list-block margin-15 no-margin-top-important">
+          <ul>
+            <li class="no-padding-left">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar regiao" data-open-in="popup">
+                <select name="regiao_origem" data-old="{{regiao_origem}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  {{#each arrRegioes}}
+                  <option value="{{@key}}">{{this}}</option>
+                  {{/each}}
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.Regiao;">Região</div>
+                    <div class="item-after left"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="no-padding-left">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar estado" data-open-in="popup">
+                <select name="estado_origem" data-old="{{estado_origem}}" required>
+                  <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  {{#each arrEstados}}
+                  <option value="{{@key}}">{{this}}</option>
+                  {{/each}}
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title" data-i18n="[html]text.UF;">UF</div>
+                    <div class="item-after left"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="no-padding-left">
+              <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar cidade" data-open-in="popup">
+                <select name="cidade_origem" data-old="{{cidade_origem}}" required>
+                  <option value=""  data-i18n="[html]text.Escolha;">Escolha</option>
+                </select>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title"  data-i18n="[html]text.Cidade;">Cidade</div>
+                    <div class="item-after left"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- FINAL CLASS origem -->
+      <div class="content-block-title title-mini2 title-dark" data-i18n="[html]text.Origem;">DESTINO</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar regiao" data-open-in="popup">
+              <select name="regiao" data-old="{{regiao}}" required>
+                <option value=""  data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrRegioes}}
+                <option value="{{@key}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title"  data-i18n="[html]text.Regiao;">Região</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar estado" data-open-in="popup">
+              <select name="estado" data-old="{{estado}}" required>
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrEstados}}
+                <option value="{{@key}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.UF;">UF</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar cidade" data-open-in="popup">
+              <select name="cidade" data-old="{{cidade}}" required>
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.Cidade;">Cidade</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-block-title title-mini2 title-dark"  data-i18n="[html]text.Valor;">VALOR</div>
+      <div class="list-block margin-15 no-margin-top-important">
+        <ul>
+          <li class="item-content t">
+            <div class="item-inner">
+              <div class="item-title label" data-i18n="[html]text.De;">De</div>
+              <div class="item-input">
+                <input type="tel" name="valor_de" class="just-number valor_moeda" placeholder="R$ 0,00" maxlength="14" />
+              </div>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-title label" data-i18n="[html]text.Ate;">Até</div>
+              <div class="item-input">
+                <input type="tel" name="valor_ate" class="just-number valor_moeda" placeholder="R$ 0,00" maxlength="14" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-block margin-15" id="raio">
+        <ul>
+          <li class="item-content">
+            <div class="item-inner">
+              <div class="item-title label"><span data-i18n="[html]text.Raio;">Raio</span>: <span><b id="raio_value">10</b> Km<span></div>
+              <div class="item-input">
+                <div class="range-slider">
+                  <input type="range" name="raio" min="0" max="300" step="1" value="200" />
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="list-block margin-15">
+        <ul>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tipo veiculo" data-open-in="popup">
+              <select name="tipo_veiculo" data-old="{{tipo_veiculo}}">
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrTiposVeiculo}}
+                <option value="{{key}}">{{value}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.TipoVeiculo;">Tipo Veículo</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-block margin-15">
+        <ul>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tipo veiculo" data-open-in="popup">
+              <select name="tipo_carroceria" data-old="{{tipo_carroceria}}">
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrTiposCarroceria}}
+                <option value="{{key}}">{{value}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.Carroceria;">Tipo Carroceria</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="list-block margin-15">
+        <ul>
+          <li class="no-padding-left">
+            <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tecnologia" data-open-in="popup">
+              <select name="tecnologia" data-old="{{tecnologia}}">
+                <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                {{#each arrTecnologias}}
+                <option value="{{@key}}">{{this}}</option>
+                {{/each}}
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title" data-i18n="[html]text.Tecnologia;">Tecnologia</div>
+                  <div class="item-after left"></div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>      
+
+      <div class="content-block">
+        <div class="row">
+          <div class="col-100">
+            <!-- <a href="#" id="btnPesquisar" class="button button-big button-fill button-raised color-green ">Pesquisar Fretes</a> -->
+            <button class="fullButton darkButton darkButtonBlue button100NoMargin" id="btnPesquisar"><span data-i18n="[html]text.PesquisarFretes;">Pesquisar Empresa</span></button>                
+
+            <!-- <a href="#" id="btnPesquisar" class="button">Pesquisar Fretes</a> -->
+          </div>
+        </div>
+        <div class="row margin-top-five">
+          <div class="col-100">
+            <!-- <a href="#" id="btnLimpar" class="button button-big button-raised button-green-reverse">Limpar Filtros</a> -->
+            <button class="fullButton darkButton darkButtonBlue button100NoMargin" id="btnLimpar"><span data-i18n="[html]text.LimparFiltros;">Pesquisar Empresa</span></button>                
+            <!-- <a href="#" id="btnLimpar" class="button">Limpar Filtros</a> -->
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

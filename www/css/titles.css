@@ -1,0 +1,42 @@
+
+div.title-mini {
+    margin: 10px 10px 10px 5px !important;
+}
+
+div.title-mini2 {
+    margin: 0px 0px 0px 0px !important;
+    padding: 10px 10px 10px 5px !important;
+}
+
+.title-dark {
+    background-color: #393939;
+    color: #fff;
+}
+
+.title-orange {
+    background-color: #f68423;
+    color: #fff;
+}
+
+.title-navy {
+    background-color: #10d4e5;
+    color: #fff;
+}
+
+.title-group {
+    margin-top: 0px;
+    padding-top: 7px;
+    border: 0px;
+    border-bottom: 2px groove #fff;
+}
+.title-group img {
+    margin-left: 5px;
+}
+.title-group span {
+    margin-left: 10px;
+    vertical-align: top;
+}
+.title-group div {
+    margin-left: 10px;
+    vertical-align: top;
+}

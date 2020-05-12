@@ -1,0 +1,66 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><img src="img/fechamento/seta-descricao-de-viagem.png"></a></div>
+    <div class="center" data-i18n="[html]menu.InformarFoto;">Informar Foto</div>
+  </div>
+</div>
+<div data-page="photo-login" class="page">
+  <div class="page-content background-login">
+      <div class="content-block photo-login">
+        <div class="bg-image image-logo">
+          <img class="imgLogo" src="img/logo-min.png"/>
+        </div>
+        <div>
+          <form >
+            <input type="hidden" name="cpf" value={{cpf}} />
+            <input type="hidden" name="codigo_pais" value={{codigo_pais}} />
+            <input type="hidden" name="telefone" value={{telefone}} />
+
+            <div class="item-inner item-noline no-padding-right">
+              <div class="text-center" data-i18n="[html]alert.MsgPhotoLogin;"></div>
+            </div>
+            <div class="item-inner item-noline no-padding-right profile-area">
+              <div class="round-profile">
+                <div class="img-profile img-profile-cad" style="background-image: url('img/profile/ico-profile.png');" data-img=""></div>
+                <div class="div-img-editar-imagem btnTirarFoto">  
+                  <img class="img-editar-imagem" src="img/profile/ico-camera-white.png"/>
+                </div>
+              </div>
+
+            </div>
+            <div class="data-form flex">
+              <div class="list-block">
+                <ul>
+                  <li class="item-content data-line">
+                    <div class="item-inner">   
+                    <div class="item-title label label-title" data-i18n="[html]text.AtribuirFotoPerfil;">:</div>
+                      <div class="item-input data-value">
+                        <label class="label-switch">
+                          <input type="checkbox" class="chkAtribuirFoto" name="atribuir_foto" value="1" />
+                          <div class="checkbox"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </li>         
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>   
+      <div class="rodape" style="width: 100%">
+        <div class="content-block photo-login">
+            <div class="data-form">
+              <div class="list-block absbottom">
+                <ul>
+                  <li>
+                    <a href="#" class="button button-big actionButtonWhite actionButtonText submitBtn uppercase">
+                    <i class="icon-inline icon-login-blue"></i><span data-i18n="[html]text.Acessar;">Acessar</span></a>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+        </div>
+      </div>
+  </div>
+</div>

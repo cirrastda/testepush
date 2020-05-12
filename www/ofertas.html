@@ -1,0 +1,43 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link backToMenu"><i class="icon icon-back"></i></a></div>
+    <div class="center" data-i18n="[html]menu.OfertasCargas;">Ofertas de cargas</div>
+	<div class="right"><a id="btnFiltrar" href="#" class="link" ><i class="f7-icons color-white">search</i></a></div>		
+	<!--<div class="right"><a id="btnInfo" href="#" class="link" style="display: none"><img src="img/ico-seta-up.png" width="22px"></a></div>-->
+  </div>
+</div>
+
+<div data-page="ofertas" class="page no-overflow">
+<!-- 	<div id="legenda" class="list-block media-list no-margin" style="display: none">
+		<ul>
+			<li class="item-content legenda">
+				<span class="item"><span class="item-color card-header-no-action">&nbsp;</span>Não Respondido</span>
+				<span class="item"><span class="item-color card-header-accept">&nbsp;</span>Aceito</span>
+				<span class="item"><span class="item-color card-header-counter">&nbsp;</span>Contra-Oferta</span>
+			</li>
+		</ul>
+	</div> -->
+ 	<div class="page-content hide-bars-on-scroll no-padding-top pull-to-refresh-content black-screen content-big-navbar" data-ptr-distance="55">
+	    <div class="pull-to-refresh-layer" style="margin-top: -45px;">
+	      <div class="preloader"></div>
+	      <div class="pull-to-refresh-arrow"></div>
+	    </div>
+       	<div id="tabOferta" class="no-margin-top">
+		    	
+		</div>
+  	</div>
+	<script id="tplpopover" type="text/template7">
+		<div class="popover">
+			<div class="popover-inner">
+		  		<div class="list-block">
+		    		<ul>
+						<li><a href="#" data-value="todos" class="popover-link item-link filtrar-lista filtrar-lista-todos" data-i18n="[html]status.Todos;">Todos</a></li>
+		      			<li><a href="#" data-value="novos" class="popover-link item-link filtrar-lista filtrar-lista-novos" data-i18n="[html]status.NovasOfertas;">Novas Ofertas</a></li>
+		      			<li><a href="#" data-value="aguardando" class="popover-link item-link filtrar-lista filtrar-lista-aguardando" data-i18n="[html]status.AguardandoResposta;">Aguardando Resposta</a></li>						  
+		    		</ul>
+		  		</div>
+			</div>
+		</div>        
+	</script>
+
+</div>

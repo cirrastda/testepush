@@ -1,0 +1,41 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center">
+      <div class="nav-reduce uppercase" data-i18n="[html]menu.HistoricoViagem;">Histórico de Viagem</div>
+    </div>
+  </div>
+</div>
+
+<div data-page="historico" class="page">
+  <div class="page-content black-screen">
+    <div class="list-block list-historico">
+      <table width="100%">
+        {{#each historico}}
+          <tr>
+              <td width="60%">
+                <i class="f7-icons historico {{this.status.status}}">{{this.status.imagem}}</i>&nbsp;{{this.mensagem}}
+              </td>
+              <td align="right">
+                {{this.data_formatada}}
+              </td>
+          </tr>
+  <!--         <li>
+            <div class="item-content">
+              <div class="item-inner linha-alvo" data-key="{{this.key}}" data-codigo="{{this.vloc_codigo}}" data-id="{{this.id}}">
+                <div class="item-data">
+                  <div class="item-input"><b>Alvo: </b>{{this.refe_descricao}}</div>
+                  <div class="item-input"><b>NF: </b>{{this.nfs}}</div>
+                </div>
+                <div class="item-status">
+                  <span>{{this.status}}</span>
+                  <i class="f7-icons bullet-status bullet-{{this.class_status}}" >circle_fill</i>
+                </div>
+              </div>
+            </div>
+          </li> -->
+        {{/each}}
+      </table>
+    </div>
+  </div>
+</div>

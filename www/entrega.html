@@ -1,0 +1,77 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><i class="icon icon-back"></i></a></div>
+    <div class="center">{{tpar_descricao}} #{{vloc_codigo}}</div>
+  </div>
+</div>
+
+<div data-page="entrega" class="page">
+  <div class="page-content black-screen">
+    <div class="headerEntrega">
+      <table class="entrega" cellpadding="0" cellspacing="5">
+        <tr>
+          <td class="imgInfo"><img src="img/fechamento/local-icone.png" />
+          <td class="info">
+            <span class="titulo"><span data-i18n="[html]text.Local;"></span>:</span><br/>
+            {{refe_descricao}}
+          </td>
+        </tr>
+        <tr>
+          <td class="imgInfo"><img src="img/fechamento/endereco-icone.png" />
+          <td class="info">
+            <span class="titulo"><span data-i18n="[html]text.Endereco;"></span>:</span><br/>
+            {{refe_endereco_completo}}
+          </td>
+        </tr>
+        <tr>
+          <td class="imgInfo"><img src="img/fechamento/distancia-icone.png" />
+          <td class="info">
+            <span class="titulo"><span data-i18n="[html]text.Distancia;"></span>:</span><br/>
+            <span class="routeDistancia">-</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="imgInfo"><img src="img/fechamento/tempo-icone.png" />
+          <td class="info">
+            <span class="titulo"><span data-i18n="[html]text.Tempo;"></span>:</span><br/>
+            <span class="routeTempo">-</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="imgInfo"><img src="img/fechamento/status-icone.png" />
+          <td class="info">
+            <span class="titulo"><span data-i18n="[html]text.Status;"></span>:</span><br/>
+            {{status}}
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="mapaEntrega">
+        <div class="no-margin">
+          <div id="mapEntrega" data-latitude="{{refe_latitude}}" data-longitude="{{refe_longitude}}"></div>
+        </div>
+        <div class="no-margin link-show-map">
+          <img src="img/fechamento/visualizar-rota.png" class="imgVisRota" />&nbsp;&nbsp;<span data-i18n="[html]text.VisualizarRota;"></span>
+          <div class="seta right">
+            <img src="img/fechamento/seta-visualizar-rota.png" />
+          </div>
+        </div>
+    </div>
+    <div class="infoEntrega">
+        <div class="divConfirma"><span data-i18n="[html]text.ConfirmacaoEntrega;"></span></div>
+        <div class="col-100 divBtnConfirma divBtnAcao">
+          <a href="#" class="button button-big button-fill button-raised color-gray btnSalvar submitBtn uppercase text-black"><span data-i18n="[html]text.EntregaRealizada;"></span></a>
+        </div>
+        <div class="col-100 divBtnRejeita divBtnAcao">
+          <a href="#" class="button button-big button-fill button-raised color-gray smart-select btnNaoRealizada uppercase text-black" data-page-title="Motivo" data-back-text="Voltar" data-open-in="popup" data-back-on-select="true">
+            <span data-i18n="[html]text.EntregaNaoRealizada;"></span>
+            <select name="motivoRecusa" class="motivoRecusa">
+              <option value="0" selected data-i18n="[html]text.Selecione;">Selecione</option>
+            </select>
+          </a>
+        </div>
+
+    </div>
+  </div>
+</div>

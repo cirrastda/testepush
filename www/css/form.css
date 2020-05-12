@@ -1,0 +1,93 @@
+.form-label-break-line ul {
+	background: transparent;
+}
+.form-label-break-line {
+	font-family: arial, sans-serif;
+	font-size: 15px !important;
+}
+.form-label-break-line input[type=time], 
+.form-label-break-line input[type=number], 
+.form-label-break-line input[type=search], 
+.form-label-break-line input[type=text], 
+.form-label-break-line input[type=password], 
+.form-label-break-line input[type=email], 
+.form-label-break-line input[type=tel], 
+.form-label-break-line input[type=url], 
+.form-label-break-line input[type=date], 
+.form-label-break-line input[type=datetime-local], 
+.form-label-break-line select, 
+.form-label-break-line textarea {
+	font-family: arial, sans-serif !important;
+	font-size: 15px !important;
+	height: 30px;
+	margin-top: 9px;
+}
+
+.form-label-break-line .item-after {
+	font-family: arial, sans-serif !important;
+	font-size: 15px !important;
+}
+
+.form-label-break-line .item-inner {
+    display: block;
+    padding-bottom: 0px;
+    min-height: 60px;
+	padding-right: 0px !important; 
+}
+
+.form-label-break-line .item-link .item-inner {
+	background-image: url('') !important;
+}
+
+.form-label-break-line .item-link .item-inner .item-after {
+	background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%2060%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Cpath%20d%3D'm60%2061.5-38.25%2038.25-9.75-9.75%2029.25-28.5-29.25-28.5%209.75-9.75z'%20fill%3D'%23c7c7cc'%2F%3E%3C%2Fsvg%3E");
+	background-size:10px 20px;
+	background-repeat:no-repeat;
+	background-position:95% center;
+	background-position:-webkit-calc(100% - 15px) center;
+	background-position:calc(100% - 15px) center;
+	width: 100%;
+	max-width: 100%;
+	margin-left: 0px !important;
+	padding-top: 4px;
+	height: 23px;
+}
+
+.form-label-break-line .item-title.label {
+    display: block;
+}
+.form-label-break-line .item-input {
+    display: block;
+    margin-left: 0px !important;
+}
+.form-group {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.form-group .form-group-header {
+    width: 100%;
+    height: 35px;
+    display: block;
+    vertical-align: middle;
+    text-align: left;
+    background-image: linear-gradient(top, #003366 0%, #336699 51%);
+    background-image: -webkit-linear-gradient(top, #003366 0%, #336699 51%);
+    background-image: -ms-linear-gradient(top, #003366 0%, #336699 51%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #003366), color-stop(0.51, #336699) );
+    color: #ffffff;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+    padding-top: 5px;
+}
+
+.form-group .form-group-header span{
+	margin-left: 10px;
+}

@@ -1,0 +1,8 @@
+Para build no android:
+	- keystore: ./android/buonnydriver.keystore 
+	- keystore password: @buonnydeveloper
+	- keystore private key alias: buonny driver
+	- keystore private key passwd: @buonnydeveloper
+
+Para compilar a versao assinada:
+	cordova build android --release -- --keystore=build-stuff/android/buonnydriver.keystore --storePassword=@buonnydeveloper --alias="buonny driver" --password=@buonnydeveloper

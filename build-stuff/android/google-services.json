@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "874075977037",
+    "firebase_url": "https://buonnydriver.firebaseio.com",
+    "project_id": "buonnydriver",
+    "storage_bucket": "buonnydriver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874075977037:android:b7502119dfd405d6",
+        "android_client_info": {
+          "package_name": "com.buonny.buonnydrivermessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874075977037-1qi3c7f9ut3f2g93s38d1e5uvaqlvksa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiM8ZzanVcoTGuztm9lEooqgBJGcZUrfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874075977037-1qi3c7f9ut3f2g93s38d1e5uvaqlvksa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "874075977037-kgk0hhj8fnrgggiac36mmelclfbjl5d9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.buonny.buonnydrivermessenger"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,447 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"><img src="img/fechamento/seta-descricao-de-viagem.png"></a></div>
+    <div class="center" data-i18n="[html]menu.EditarPerfil;">Editar Perfil</div>
+  </div>
+</div>
+
+<div data-page="dados-pessoais" class="page">
+  <div class="bg-block" style="display: none">
+    <div class="bg-block-content">
+      <div class="float-navitem-left close-foto">
+        <img src="img/fechamento/seta-descricao-de-viagem.png" />
+      </div>
+      <div class="icones-foto-motorista">
+        <a href="#" class="img-nova-foto ico-foto-motorista" data-origem="camera">
+          <img src="img/fechamento/nova-foto.png"><br/>
+          <span data-i18n="[html]text.NovaFoto;">Nova Foto</span>
+        </a>
+        <br/><br/>
+        <a href="#" class="img-foto-existente ico-foto-motorista" data-origem="galeria">
+          <img src="img/fechamento/foto-existente.png"><br/>
+          <span data-i18n="[html]text.FotoExistente;">Foto Existente</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="page-content background-login">
+    <div class="content-block dados-pessoais theme-blue-white  margin-top-five">
+      <form>
+        <div class="list-block no-margin form-label-break-line no-margin-bottom  margin-top-15">
+          <div class="form-group">
+            <div class="form-group-header">
+              <span>Dados Pessoais</span>
+            </div>
+            <ul style="margin-top: 10px;">
+              <li class="item-content no-padding-left">
+                <div class="item-inner item-noline no-padding-right profile-area">
+                  <div class="round-profile">
+                    <div style="background-image: url('{{foto}}?{{n}}');" data-img="{{foto}}" class="img-profile" ></div>
+                    <!-- <div class="img-profile img-profile-cad" style="background-image: url('img/profile/ico-profile.png');" data-img=""></div> -->
+                    <div class="div-img-editar-imagem btnEditImagem">  
+                      <img class="img-editar-imagem" src="img/profile/ico-edit.png"/>
+                    </div>
+                  </div>
+                  <div class="logo-profile">
+                    <img class="imgLogo" src="img/logo-min.png"/>
+                  </div>
+                  <!--
+                  <div class="btn-editar-imagem">
+                    <a href="#" class="button color-navy active btnEditImagem button-medium uppercase table-cell" data-i18n="[html]text.ToqueParaEditar;">Toque para Editar</a>
+                  </div>
+                  -->
+                </div>
+              </li>            
+              <li class="item-content">
+                <div class="item-inner">
+                <div class="item-title label"><span  data-i18n="[html]text.CPF;">CPF</span>:</div>
+                  <div class="item-input">
+                    <input type="hidden" name="cpf" value="{{documento}}" />
+                    <input type="hidden" name="telefone" value="{{telefone}}" />
+                    <input type="hidden" name="codigo_pais" value="{{codigo_pais}}" />
+                    <input type="text" name="documento_view" value="{{documento}}" disabled="disabled" />
+                  </div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><span data-i18n="[html]text.Nome;">Nome</span>:</div>
+                  <div class="item-input">
+                    <input type="text" name="nome" class="uppercase" required placeholder="Nome Completo" maxlength="200" value="{{nome}}" />
+                  </div>
+                </div>
+              </li>
+              <li class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label"><span  data-i18n="[html]text.Email;">E-Mail</span>:</div>
+                  <div class="item-input">
+                    <input type="text" name="email" class="email" placeholder="E-Mail" maxlength="200" value="{{email}}" {{#if required['email']}}required{{/if}} />
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-content no-padding-left">
+                <div class="item-inner">
+                  <div class="item-title label" data-i18n="[html]text.Celular;">Celular</div>
+                  <div class="item-input">
+                    <input type="tel" name="celular" required class="celular telefone" placeholder="(__) _____-____" maxlength="15" value="{{telefone}}"/>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="form-group">
+            <div class="form-group-header">
+              <span>Dados Endereço</span>
+            </div>
+            <ul>
+
+              <li class="item-content no-padding-left">
+                <div class="item-inner">
+                  <div class="item-title label" data-i18n="[html]text.CEP;">CEP</div>
+                  <div class="item-input">
+                    <input type="tel" name="cep" class="cep" placeholder="_____-___" maxlength="9" value="{{cep}}" {{#if required['cep']}}required{{/if}} />
+                  </div>
+                </div>
+              </li>
+              <li class="item-content no-padding-left">
+                <div class="item-inner">
+                  <div class="item-title label" data-i18n="[html]text.Endereco;">Endereço</div>
+                  <div class="item-input">
+                    <input type="text" name="endereco" placeholder="Endereço" data-i18n="[placeholder]text.Endereco;" maxlength="255" {{#if required['endereco']}}required{{/if}} value="{{endereco}}" />
+                  </div>
+                </div>
+              </li>
+              <li class="item-content no-padding-left">
+                <div class="item-inner">
+                  <div class="item-title label" data-i18n="[html]text.Num;">Num.</div>
+                  <div class="item-input">
+                    <input type="tel" name="numero" class="just-number" placeholder="Número" data-i18n="[placeholder]text.Numero;"maxlength="5" {{#if required['numero']}}required{{/if}} value="{{numero}}" />
+                  </div>
+                </div>
+              </li>
+              <li class="item-content no-padding-left">
+                <div class="item-inner">
+                  <div class="item-title label" data-i18n="[html]text.Compl;">Compl.</div>
+                  <div class="item-input">
+                    <input type="text" name="complemento" placeholder="Complemento" data-i18n="[placeholder]text.Complemento;" maxlength="128" {{#if required['complemento']}}required{{/if}} value="{{complemento}}" />
+                  </div>
+                </div>
+              </li>       
+              <li class="no-padding-left">
+                <a href="#" class="item-link smart-select {{#if required['estado']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar estado" data-open-in="popup">
+                  <select name="estado" data-old="{{codigo_estado}}" {{#if required['estado']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                    {{#each arrEstados}}
+                    <option value="{{@key}}">{{this}}</option>
+                    {{/each}}
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.Estado;">Estado</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>       
+              <li class="no-padding-left">
+                <a href="#" class="item-link smart-select {{#if required['cidade']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar cidade" data-open-in="popup">
+                  <select name="cidade" data-old="{{codigo_cidade}}" {{#if required['cidade']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.Cidade;">Cidade</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>       
+              <li class="item-content no-padding-left">
+                <div class="item-inner">  
+                  <div class="item-title label" data-i18n="[html]text.Bairro;">Bairro</div>
+                  <div class="item-input">
+                    <input type="text" name="bairro" data-i18n="[placeholder]text.Bairro;" placeholder="Bairro" maxlength="128" {{#if required['bairro']}}required{{/if}} value="{{bairro}}" />
+                  </div>
+                </div>
+              </li>       
+            </ul>
+          </div>
+          <div class="form-group">
+            <div class="form-group-header">
+              <span>Dados Veículo</span>
+              <div class="icons_titulo">
+                <img class="icone img-edit-carreta" data-seq="1" id="edit-carreta-1" src="img/profile/edit_carreta.png" {{#unless carreta1_exists}}style="display:none"{{/unless}} />
+                <img class="icone img-edit-carreta" data-seq="2" id="edit-carreta-2" src="img/profile/edit_carreta.png" {{#unless carreta2_exists}}style="display:none"{{/unless}} />
+                <img class="icone img-add-carreta" data-seq="{{qtd_carretas+1}}" id="add-carreta" src="img/profile/add_carreta.png" {{#if carreta2_exists}}style="display:none"{{/if}} />
+              </div>
+            </div>
+            <ul>
+              <li class="item-content no-padding-left">
+                <div class="item-inner">  
+                  <div class="item-title label" data-i18n="[html]text.Placa;">Placa</div>
+                  <div class="item-input">
+                    <input type="text" name="placa" class="placa" {{#if required['placa']}}required{{/if}} placeholder="___-____" maxlength="8" value="{{placa}}" />
+                  </div>
+                </div>
+              </li>       
+              <li class="no-padding-left item-content-select">
+                <a href="#" class="item-link smart-select {{#if required['tipo_veiculo']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tipo veiculo"  data-open-in="popup">
+                  <select name="tipo_veiculo" data-old="{{tipo_veiculo}}" {{#if required['tipo_veiculo']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;"></option>
+                    {{#each arrTiposVeiculo}}
+                    <option value="{{key}}">{{value}}</option>
+                    {{/each}}
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.TipoVeiculo;">Tipo Veículo</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>       
+              <li class="no-padding-left item-content-select">
+                <a href="#" class="item-link smart-select {{#if required['tipo_carroceria']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tipo carroceria"  data-open-in="popup">
+                  <select name="tipo_carroceria" data-old="{{tipo_carroceria}}" {{#if required['tipo_carroceria']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                    {{#each arrTiposCarroceria}}
+                    <option value="{{key}}">{{value}}</option>
+                    {{/each}}
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.Carroceria;">Carroceria</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="item-content no-padding-left {{#if estrangeiro}}no_show{{/if}}">
+                <div class="item-inner">  
+                  <div class="item-title label">ANTT</div>
+                  <div class="item-input">
+                    <input type="tel" name="antt" placeholder="ANTT" maxlength="10" {{#if required['antt']}}required{{/if}} value="{{antt}}" />
+                  </div>
+                </div>
+              </li>                   
+              <li class="no-padding-left item-content-select">
+                <a href="#" class="item-link smart-select {{#if required['marca']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar marca" data-open-in="popup">
+                  <select name="marca" data-old="{{marca}}" {{#if required['marca']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                    {{#each arrFabricantes}}
+                    <option value="{{@key}}">{{this}}</option>
+                    {{/each}}
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.Marca;">Marca</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>       
+              <li class="no-padding-left item-content-select">
+                <a href="#" class="item-link smart-select {{#if required['modelo']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar modelo"  data-open-in="popup">
+                  <select name="modelo" data-old="{{modelo}}" {{#if required['modelo']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.Modelo;">Modelo</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+              <li class="no-padding-left item-content-select">
+                <a href="#" class="item-link smart-select {{#if required['ano']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar ano" data-open-in="popup">
+                  <select name="ano" data-old="{{ano}}" {{#if required['ano']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                    {{#each arrAnos}}
+                    <option value="{{this}}">{{this}}</option>
+                    {{/each}}
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.Ano;">Ano</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!--VERSAO DA TECNOLOGIA-->
+              <input type="hidden" name="versao_tec" value="{{versao_tec}}" />
+              <!--VERSAO DA TECNOLOGIA-->
+              <!--VEICULO ATRELADO-->
+              <input type="hidden" name="veic_atrelado" value="{{veic_atrelado}}"/>
+              <input type="hidden" name="rastreador" value="{{rastreador}}"/>
+              <!--VEICULO ATRELADO-->
+              <!--TECNOLOGIA-->
+              <li class="no-padding-left item-content-select">
+                <a href="#" class="item-link smart-select {{#if required['tecnologia']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar tecnologia" data-open-in="popup">
+                  <select name="tecnologia" data-old="{{tecnologia}}" {{#if required['tecnologia']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                    {{#each arrTecnologias}}
+                    <option value="{{@key}}">{{this}}</option>
+                    {{/each}}
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title" data-i18n="[html]text.Tecnologia;">Tecnologia</div>
+                      <div class="item-after left" data-i18n="[html]text.Escolha;"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>                   
+              <!--TECNOLOGIA-->               
+            </ul>
+          </div>
+          <div class="carretas">
+            {{#each list_carretas}}
+              <input type="hidden" name="carretas[{{this}}].placa" id="carreta{{this}}placa" />
+              <input type="hidden" name="carretas[{{this}}].marca" id="carreta{{this}}marca" />
+              <input type="hidden" name="carretas[{{this}}].modelo" id="carreta{{this}}modelo" />
+              <input type="hidden" name="carretas[{{this}}].ano" id="carreta{{this}}ano" />
+            {{/each}}
+          </div>
+          <div class="form-group">
+            <div class="form-group-header">
+              <span>Dados CNH</span>
+            </div>
+            <ul>
+              <li class="item-content no-padding-left">
+                <div class="item-inner">  
+                  <div class="item-title label" data-i18n="[html]text.CNH;">CNH</div>
+                  <div class="item-input">
+                    <input type="tel" name="cnh" class="just-number cnh" data-i18n="[placeholder]text.NumeroCNH;" placeholder="Número da CNH" maxlength="11" {{#if required['cnh']}}required{{/if}} value="{{cnh}}" />
+                  </div>
+                </div>
+              </li>       
+              <li class="item-content no-padding-left">
+                <div class="item-inner">  
+                  <div class="item-title label" data-i18n="[html]text.DtValidade;">Dt. Validade</div>
+                  <div class="item-input">
+                    <input type="text" class="data" id="cnh_vencimento" name="cnh_vencimento" data-i18n="[placeholder]text.ValidadeCNH;" placeholder="Validade da CNH"  {{#if required['cnh_vencimento']}}required{{/if}} value="{{cnh_vencimento}}"  />
+                  </div>
+                </div>
+              </li>
+              <li class="no-padding-left">
+                <a href="#" class="item-link smart-select {{#if required['cnh_categoria']}}required{{/if}}" data-back-on-select="true" data-back-text="Voltar" data-open-in="popup" data-searchbar-placeholder="Buscar Tipo CNH" >
+                  <select name="cnh_categoria" data-old="{{cnh_categoria}}" {{#if required['cnh_categoria']}}required{{/if}}>
+                    <option value="" data-i18n="[html]text.Escolha;">Escolha</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                    <option value="5">E</option>
+                  </select>
+                  <div class="item-content no-padding-left">
+                    <div class="item-inner">
+                      <div class="item-title"  data-i18n="[html]text.Categoria;">Categoria</div>
+                      <div class="item-after left"></div>
+                    </div>
+                  </div>
+                </a>
+              </li>       
+
+            </ul>
+          </div>
+        </div>
+
+      </form>
+      <div class="list-block">
+        <div class="row">
+          <div class="col-100">
+            <a href="#" data-action="register-only" class="button button-big uppercase actionButtonWhite actionButtonText  btnCadastrar submitBtn"><i class="f7-icons color-navy button-icon">floppy_disk</i><span data-i18n="[html]text.AtualizarCadastro;">Atualizar Cadastro</span></a>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-100 table">
+            <a href="#" class="button btnLogoff button-big uppercase actionButtonGray">
+            <i class="icon-inline icon-logoff-white"></i><span data-i18n="[html]text.SairDaConta;">Sair da Conta</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--     <div class="content-block rodape">
+      <div class="row">
+        <div class="col-50 table">
+          <a href="#" data-action="concluir" class="button button-fill button-medium button-raised color-navy btnCancelar uppercase table-cell"  data-i18n="[html]text.Cancelar;">Cancelar</a>
+        </div>
+        <div class="col-50 table">
+          <a href="#" data-action="concluir" class="button button-fill button-medium button-raised color-navy btnSalvar submitBtn uppercase table-cell"  data-i18n="[html]text.Salvar;">Salvar</a>
+        </div>
+      </div>
+    </div>
+ -->  </div>
+
+  <script id="tplmodalCarreta" type="text/template7">
+    <br/>
+    <div class="view modal-view">
+      <div class="pages">
+        <div class="page">
+          <div class="page-content">
+            <div class="list-block no-margin-bottom margin-top-five">
+              <ul>
+                <li class="item-content no-padding-left">
+                  <div class="item-inner">  
+                    <div class="item-title label">Placa</div>
+                    <div class="item-input">
+                      <input type="text" name="placa_carreta" class="placa placa_carreta" placeholder="___-____" maxlength="8" />
+                    </div>
+                  </div>
+                </li>
+                <li class="no-padding-left item-content-select">
+                  <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar marca" >
+                    <select name="marca_carreta" class="marca_carreta">
+                      <option value="">Escolha</option>
+                      {{#each arrFabricantes}}
+                      <option value="{{@key}}">{{this}}</option>
+                      {{/each}}
+                    </select>
+                    <div class="item-content no-padding-left">
+                      <div class="item-inner">
+                        <div class="item-title">Marca</div>
+                        <div class="item-after left"></div>
+                      </div>
+                    </div>
+                  </a>
+                </li>       
+                <li class="no-padding-left item-content-select">
+                  <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar modelo">
+                    <select name="modelo_carreta" class="modelo_carreta">
+                      <option value="">Escolha</option>
+                    </select>
+                    <div class="item-content no-padding-left">
+                      <div class="item-inner">
+                        <div class="item-title">Modelo</div>
+                        <div class="item-after left"></div>
+                      </div>
+                    </div>
+                  </a>
+                </li> 
+                <li class="no-padding-left item-content-select">
+                  <a href="#" class="item-link smart-select" data-back-on-select="true" data-back-text="Voltar" data-searchbar="true" data-searchbar-placeholder="Buscar ano">
+                    <select name="ano_carreta" class="ano_carreta">
+                      <option value="">Escolha</option>
+                      {{#each arrAnos}}
+                      <option value="{{this}}">{{this}}</option>
+                      {{/each}}
+                    </select>
+                    <div class="item-content no-padding-left">
+                      <div class="item-inner">
+                        <div class="item-title">Ano</div>
+                        <div class="item-after left"></div>
+                      </div>
+                    </div>
+                  </a>
+                </li>                                                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+  </script> 
+</div>

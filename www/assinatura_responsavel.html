@@ -1,0 +1,35 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center uppercase" data-i18n="[html]menu.Assinatura;">Assinatura</div>
+    </div>
+</div>
+
+<div data-page="assinatura_responsavel" class="page">
+    <div class="page-content black-screen">
+        <div class="infoEntrega assinatura_responsavel">
+            <form name="fmEntregaAssinatura">
+                <input type="hidden" name="codigo" value="{{vloc_codigo}}" />
+
+                <div id="signature-pad" class="quadro-de-assinatura signature-pad">
+                    <canvas></canvas>
+                </div>
+
+                <br>
+
+                <div class="divConfirma assinatura-responsavel ">
+                    <input class="button button-big button-fill button-raised color-gray botao-salvar uppercase text-black " type="button" name="tProximaPagina" id="cSalvarAssinatura" data-i18n="[value]text.Salvar;">
+                </div>
+
+                <div class="divConfirma assinatura-responsavel">
+                    <input class="button button-big button-fill button-raised color-gray botao-assinar-novamente uppercase text-black" type="button" name="tEnviarAssinatura" id="cLimparAssinatura" data-i18n="[value]text.AssinarNovamente;">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

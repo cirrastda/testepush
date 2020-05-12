@@ -1,0 +1,37 @@
+<!--
+<div class="navbar">
+  <div class="navbar-inner">
+      <div class="center">Informações da SM</div>
+      <div class="subnavbar">
+        SM {{viag_codigo_sm}}
+      </div>
+  </div>
+</div>
+-->
+<!--<div data-page="info-viagem" class="page">-->
+    <div class="list-block panel-topo-big">
+      <div class="panel-title" data-i18n="[html]menu.ListaEntregas;">Lista de Entregas</div>
+    </div>
+    <form>          
+      <div class="list-block list-entregas margin-top-10 black-screen">
+        <ul>
+          {{#each alvos}}
+            <li>
+              <div class="item-content">
+                <div class="item-inner linha-alvo" data-key="{{this.key}}" data-codigo="{{this.vloc_codigo}}" data-id="{{this.id}}">
+                  <div class="item-data">
+                    <div class="item-input"><b data-i18n="[html]text.Alvo;"></b><b>: </b>{{this.refe_descricao}}</div>
+                    <div class="item-input"><b data-i18n="[html]text.NF;"></b><b>: </b>{{this.nfs}}</div>
+                  </div>
+                  <div class="item-status">
+                    <span>{{this.status}}</span>
+                    <i class="f7-icons bullet-status bullet-{{this.class_status}}" >circle_fill</i>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {{/each}}
+      </ul>
+      </div>
+    </form>
+<!--</div>-->

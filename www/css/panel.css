@@ -1,0 +1,208 @@
+.panel {
+    background: #393939;
+    width: 290px;
+    box-shadow: 10px 0px 20px #777;
+}
+
+.panel.panel-left {
+    border-right: 2px groove #fff;
+}
+
+.panel.panel-right {
+    border-left: 2px groove #fff;
+}
+
+body.with-panel-left-reveal .panel-left { 
+    -webkit-transform: translate3d(290px,0,0); 
+    -ms-transform: translate3d(290px,0,0); 
+    transform: translate3d(290px,0,0); 
+} 
+
+body.with-panel-left-reveal .views{
+    -webkit-transform:translate3d(290px,0,0);
+    transform:translate3d(290px,0,0)
+}
+
+body.with-panel-left-reveal .panel-overlay {
+    margin-left: 290px;
+    
+}
+
+.panel.panel-left.panel-reveal { 
+    z-index: 6000; 
+    left: -290px; 
+}
+
+.panel .content-block {
+	color: #053170;
+}
+
+body.with-panel-right-reveal .views {
+  -webkit-transform:translate3d(-290px,0,0);
+  transform:translate3d(-290px,0,0);
+}
+
+body.with-panel-right-reveal .panel-overlay {
+  margin-left:-290px;
+}
+
+body.with-panel-right-reveal .panel-right {
+  -webkit-transform:translate3d(-290px,0,0);
+  transform:translate3d(-290px,0,0)
+}
+
+.panel.panel-right.panel-reveal {
+  right: -290px;
+}
+
+.panel .navbar-inner .center {
+  margin-left: 0px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.panel .navbar-inner .subnavbar {
+  margin-left: 0px !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+
+.panel-left table {
+    padding: 15px;
+    background: #2e2e2e;
+    width: 100%;
+    box-shadow: 0px 10px 20px #000;
+}
+
+.panel-left table td span {
+    color: #fff !important;
+}
+
+.panel-left table img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 5px solid #fff;
+}
+
+.panel-left table .welcome {
+  font-size: 24px;
+  color:  #FFFFFF;
+  vertical-align: bottom;
+  line-height: 20px;
+  padding-left: 5px;
+}
+
+.panel-left table .username {
+  font-weight: bold;
+  font-size: 15px;
+  vertical-align: top;
+  padding-left: 10px;
+  font-family: Arial;
+  display: inline-block;
+}
+
+.panel-left ul {
+    background: transparent;
+}
+
+.panel-left ul li {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu-panel .item-inner:after {
+    background-color: #fff !important;
+}
+
+.menu-panel ul:after {
+    background-color: transparent !important;
+}
+
+.menu-panel ul:before {
+    background-color: transparent !important;
+}
+
+.icon-personal {
+    background: url('../img/icon/editar-perfil.png') no-repeat center center;
+    width: 34px; 
+    height: 26px;
+}
+
+.icon-about {
+    background: url('../img/icon/sobre.png') no-repeat center center;
+    width: 32px; 
+    height: 29px;
+}
+
+.icon-help {
+    background: url('../img/icon/ajuda.png') no-repeat center center;
+    width: 32px; 
+    height: 29px;
+}
+
+.icon-privacy {
+    background: url('../img/icon/privacy.png') no-repeat center center;
+    width: 32px; 
+    height: 29px;
+}
+
+.panel .panel-topo {
+  padding-top: 10px;
+  margin-top: 0px;
+  width: 100%;
+  border-bottom: 1px dashed #fff;
+  line-height: 35px;
+  margin-bottom: 5px;
+  background-color: #0F1014;
+}
+
+.panel .panel-topo-big {
+  padding-top: 10px;
+  margin-top: 0px;
+  width: 100%;
+  line-height: 45px;
+  margin-bottom: 5px;
+  background-color: #0F1014;
+}
+
+.panel .panel-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+
+}
+
+.panel .panel-subtitle {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.panel .img-profile-menu {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 100px;
+    border: 5px solid #fff;
+    background-color: #aaa;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.panel .round-profile {
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+    border: 0px solid #aaa;
+    display: inline-block;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);    
+  margin-left: 10px;
+}

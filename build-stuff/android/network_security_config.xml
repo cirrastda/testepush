@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">cloudmi.datami.com</domain>
+        <domain includeSubdomains="true">d01ti012</domain>
+        <domain includeSubdomains="true">172.16.21.27</domain>
+        <domain includeSubdomains="true">portal.buonny.cl</domain>
+        <domain includeSubdomains="true">maps.googleapis.com</domain>
+        <domain includeSubdomains="true">maps.gstatic.com</domain>
+    </domain-config>
+</network-security-config>
