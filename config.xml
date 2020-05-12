@@ -60,6 +60,7 @@
         </edit-config> -->
     </platform>
     <platform name="ios">
+        <hook src="hooks/altera_podfile_deployment_version.js" type="after_prepare" />
         <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
             <string>This app requires bluetooth access to function properly.</string>
         </config-file>
